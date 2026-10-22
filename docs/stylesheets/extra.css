@@ -1,0 +1,202 @@
+/* ==========================================================================
+   Bobchestrate Workshop - Home Page Cards & Custom Styling
+   ========================================================================== */
+
+/* 1. Hide default H1 / Header on home page */
+article.md-content__inner:has(.home-cards-container) > h1:first-child,
+.md-typeset:has(.home-cards-container) > h1:first-child,
+.home-cards-container ~ h1 {
+  display: none !important;
+}
+
+/* Hide the top tab navigation bar on the home page only */
+body:has(.home-cards-container) .md-tabs {
+  display: none !important;
+}
+
+/* 2. Container setup */
+.home-cards-container {
+  max-width: 1040px;
+  margin: 2rem auto 4rem auto;
+  padding: 0 0.5rem;
+}
+
+/* 3. Cards Grid Layout */
+.md-typeset .grid.cards.home-cards > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 1.75rem;
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 4. Individual Card Style (Noticeable & Elevated) */
+.md-typeset .grid.cards.home-cards > ul > li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.75rem;
+  border-radius: 16px;
+  border: 2px solid var(--md-default-fg-color--lighter);
+  background: var(--md-default-bg-color);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.28s ease,
+              background-color 0.28s ease;
+  margin: 0 !important;
+}
+
+/* Light mode card surface */
+[data-md-color-scheme="default"] .md-typeset .grid.cards.home-cards > ul > li {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+/* Dark mode card surface */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.home-cards > ul > li {
+  background: #1e222d;
+  border-color: #2d3444;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Hover Effects */
+.md-typeset .grid.cards.home-cards > ul > li:hover {
+  transform: translateY(-6px);
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 16px 36px rgba(63, 81, 181, 0.18),
+              0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.home-cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5),
+              0 0 24px rgba(124, 92, 216, 0.25);
+}
+
+/* 5. Card Title & Icon */
+.md-typeset .grid.cards.home-cards h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--md-default-fg-color);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.md-typeset .grid.cards.home-cards h3 a {
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.md-typeset .grid.cards.home-cards h3 a:hover {
+  color: var(--md-primary-fg-color);
+}
+
+/* Remove permalink anchor symbol inside card headers */
+.md-typeset .grid.cards.home-cards h3 .headerlink {
+  display: none;
+}
+
+/* 6. Card Divider */
+.md-typeset .grid.cards.home-cards hr {
+  margin: 0.75rem 0 1rem 0;
+  border: 0;
+  height: 1.5px;
+  background: var(--md-default-fg-color--lightest);
+  opacity: 0.9;
+}
+
+/* 7. Card Body Description */
+.md-typeset .grid.cards.home-cards p {
+  margin: 0 0 1.25rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--md-default-fg-color--light);
+  flex-grow: 1;
+}
+
+/* 8. Card Footer Row (Duration + Action) */
+.md-typeset .grid.cards.home-cards p:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: auto 0 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  gap: 0.75rem;
+  flex-grow: 0;
+}
+
+/* Duration / Reference Badge */
+.md-typeset .grid.cards.home-cards .card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  background: rgba(63, 81, 181, 0.08);
+  color: var(--md-primary-fg-color);
+  white-space: nowrap;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.home-cards .card-badge {
+  background: rgba(124, 92, 216, 0.18);
+  color: #c7d2fe;
+}
+
+/* Call to Action Button */
+.md-typeset .grid.cards.home-cards .card-action a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  text-decoration: none;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  background: var(--md-primary-fg-color);
+  box-shadow: 0 2px 6px rgba(63, 81, 181, 0.25);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.md-typeset .grid.cards.home-cards .card-action a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(63, 81, 181, 0.4);
+  filter: brightness(1.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.home-cards .card-action a {
+  background: var(--md-primary-fg-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Featured / Advanced Tag */
+.md-typeset .grid.cards.home-cards .badge-featured {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  display: inline-flex;
+  align-items: center;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.home-cards .badge-featured {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fcd34d;
+  border-color: rgba(245, 158, 11, 0.4);
+}

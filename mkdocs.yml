@@ -63,7 +63,8 @@ markdown_extensions:
 
 # Navigation structure
 nav:
-  - Intro: index.md
+  - Home: index.md
+  - Introduction: introduction.md
   - Part 1 - Setup:
       - Overview: part1-setup/README.md
   - Part 2 - First Agent:
@@ -80,6 +81,10 @@ nav:
 plugins:
   - search
   - glightbox
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css
 
 # Extra
 extra:
