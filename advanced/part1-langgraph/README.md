@@ -596,7 +596,7 @@ def llm_node(state: AgentState, config: RunnableConfig) -> AgentState:
 ## ❗️IMPORTANT for Zurich Session❗️ ##
 There's currently an open issue with `ChatWxO.from_runnable_config` and instead of using `llm = ChatWxO.from_runnable_config(config=config, model="groq/openai/gpt-oss-120b")`in your code you need to use:
 ```python
-llm = ChatWxO(instance_url="https://api.eu-central-1.dl.watson-orchestrate.ibm.com/instances/20260406-1551-4974-3056-ae727fd272f5", api_key="azI6MGMzN2Q4MjAtMTcyOC00MzA0LWFiNGYtZWJmOWQ3MTI5NGViOkRLWm5TOWtHSWhhWFpBUStqcEh2WGQwaFdFYXltblhFZ3RScEFwU2tRTjQ9", model="groq/openai/gpt-oss-120b")
+llm = ChatWxO(instance_url="<YOUR_INSTANCE_URL>", api_key="<YOUR_API_KEY>", model="groq/openai/gpt-oss-120b")
 ```
 
 #### Step 3: Update `requirements.txt`
