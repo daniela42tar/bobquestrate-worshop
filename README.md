@@ -180,7 +180,6 @@ By the end of this workshop, you will:
 
 ## Additional Resources
 
-- [Workshop Website](https://juseljuk.github.io/bobchestrate-workshop/)
 - [Bob Helpful Prompts](./bob-prompts/helpful-prompts.md)
 - [watsonx Orchestrate Documentation](https://developer.watson-orchestrate.ibm.com/)
 - [Python Tools Guide](https://developer.watson-orchestrate.ibm.com/tools/create_tool)
@@ -192,9 +191,5 @@ By the end of this workshop, you will:
 - Ask Bob: "Bob, I'm stuck on [specific issue]"
 - Review the [bob-prompts guide](./bob-prompts/helpful-prompts.md) for helpful prompts
 - Consult the watsonx Orchestrate documentation
-
-## Reporting Issues and Asking for Enhancements
-
-If you have any issues or suggestions for improvement, please open an issue in the [Bobchestrate repository](https://github.com/juseljuk/bobchestrate-workshop/issues) — you'll need a GitHub account to do this. Cheers 🍻
 
 Let's get started! Head to [Part 1: Setup](./part1-setup/README.md) →

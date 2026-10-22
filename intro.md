@@ -181,7 +181,6 @@ Al terminar este taller, habrás conseguido:
 
 ## Recursos adicionales
 
-- [Sitio web del taller](https://juseljuk.github.io/bobchestrate-workshop/)
 - [Prompts útiles de Bob](./bob-prompts/helpful-prompts.md)
 - [Documentación de watsonx Orchestrate](https://developer.watson-orchestrate.ibm.com/)
 - [Guía de herramientas en Python](https://developer.watson-orchestrate.ibm.com/tools/create_tool)
@@ -193,9 +192,5 @@ Al terminar este taller, habrás conseguido:
 - Pregunta a Bob: «Bob, estoy atascado con [problema concreto]»
 - Consulta la [guía de bob-prompts](./bob-prompts/helpful-prompts.md) para ver prompts útiles
 - Consulta la documentación de watsonx Orchestrate
-
-## Notificar incidencias y solicitar mejoras
-
-Si tienes algún problema o sugerencia de mejora, abre una incidencia (issue) en el [repositorio de Bobchestrate](https://github.com/juseljuk/bobchestrate-workshop/issues); necesitarás una cuenta de GitHub. ¡Salud! 🍻
 
 ¡Vamos a empezar! Ve a la [Parte 1: Configuración](./part1-setup/README.md) →

@@ -1,13 +1,11 @@
 site_name: Bobchestrate Advanced Workshop
 site_description: Advanced topics in watsonx Orchestrate agent development
 site_author: Workshop Team
-site_url: https://juseljuk.github.io/bobchestrate-workshop/advanced/
 
 docs_dir: docs-advanced
 
 # Repository
 repo_name: bobchestrate-workshop
-repo_url: https://github.com/juseljuk/bobchestrate-workshop
 edit_uri: edit/main/
 
 theme:
@@ -72,10 +70,5 @@ nav:
 plugins:
   - search
   - glightbox
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/juseljuk/bobchestrate-workshop
 
 # Made with Bob
