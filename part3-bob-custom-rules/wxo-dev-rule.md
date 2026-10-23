@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 ## watsonx Orchestrate Development Rule
 
 When working with IBM watsonx Orchestrate or watsonx Orchestrate ADK projects:

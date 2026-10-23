@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Parte 3: Usar Reglas Personalizadas con Bob IDE
 
 <p align="center">

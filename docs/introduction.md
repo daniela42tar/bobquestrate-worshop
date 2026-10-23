@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Bobchestrate Workshop - Creación de agentes de IA con watsonx Orchestrate e IBM Bob
 
 ![Logotipo del taller](Bobchestrate_Workshop_logo_new.png)

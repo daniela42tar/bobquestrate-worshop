@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Parte 1: Configuración del Entorno
 
 <p align="center">

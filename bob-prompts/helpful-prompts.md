@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Helpful Bob Prompts for watsonx Orchestrate Development
 
 <p align="center">

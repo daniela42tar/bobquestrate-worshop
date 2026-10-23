@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Parte 2: Construir tu Primer Agente
 
 <p align="center">

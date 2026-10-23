@@ -65,17 +65,11 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Introduction: introduction.md
-  - Part 1 - Setup:
-      - Overview: part1-setup/README.md
-  - Part 2 - First Agent:
-      - Overview: part2-first-agent/README.md
-      - Exercises: part2-first-agent/exercises.md
-  - Part 3 - Bob Custom Rules:
-      - Overview: part3-bob-custom-rules/README.md
-  - Part 4 - Multi-Agent Orchestration:
-      - Overview: part4-multi-agent-orchestration/README.md
-  - Bob Prompts:
-      - Helpful Prompts: bob-prompts/helpful-prompts.md
+  - Part 1 - Setup: part1-setup/README.md
+  - Part 2 - First Agent: part2-first-agent/README.md
+  - Part 3 - Bob Custom Rules: part3-bob-custom-rules/README.md
+  - Part 4 - Multi-Agent Orchestration: part4-multi-agent-orchestration/README.md
+  - Bob Prompts: bob-prompts/helpful-prompts.md
 
 # Plugins
 plugins:

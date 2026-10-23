@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Parte 4: Orquestación Multi-Agente y Flujos de Trabajo
 
 <p align="center">
