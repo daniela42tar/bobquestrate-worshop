@@ -341,19 +341,6 @@ Bob, why might my agent be giving unexpected responses? Here are the instruction
 Bob, check this YAML file for syntax errors: [paste YAML]
 ```
 
-## Ejercicios adicionales
-
-Para practicar de forma práctica construyendo agentes, consulta los [Ejercicios de la Parte 2](./exercises.md).
-
-Los ejercicios incluyen:
-
-- Crear agentes basados en una personalidad
-- Construir agentes expertos en un dominio
-- Soporte multilingüe de agentes
-- Formato de salida estructurado
-- Patrones de flujo conversacional
-- Depurar problemas de agentes
-
 ## Puntos clave
 
 ✅ Los agentes se definen usando especificaciones YAML  
