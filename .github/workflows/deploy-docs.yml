@@ -49,9 +49,6 @@ jobs:
       - name: Build foundation site
         run: mkdocs build --strict --config-file mkdocs.yml
 
-      - name: Build advanced site into site/advanced/
-        run: mkdocs build --strict --config-file mkdocs-advanced.yml --site-dir site/advanced
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
