@@ -15,7 +15,7 @@ hide:
 
     Resumen del taller, requisitos previos, objetivos de aprendizaje y consejos para sacarle el máximo partido.
 
-    <span class="card-badge">⏱️ 75-90 min</span> <span class="card-action">[Empezar →](introduction.md)</span>
+    <span class="card-badge">⏱️ 10 min</span> <span class="card-action">[Empezar →](introduction.md)</span>
 
 -   ### 🛠️ [Parte 1 — Configuración y entorno](part1-setup/README.md)
 
