@@ -580,6 +580,38 @@ orchestrate env activate <name>
 1. Reinicia Bob IDE
 2. Comprueba el panel de salida de Bob para ver los errores
 
+### Problema: En la Barra de Estado no aparece la opción de instalar el ADK
+**Solución:** Haz clic en el elemento que aparece en la Barra de Estado y selecciona **Initialize Workspace** en la lista de comandos. Después, vuelve a seguir el [Paso 8](#paso-8-instalar-el-watsonx-orchestrate-adk) para instalar el ADK.
+
+### Problema: El servidor MCP `watsonx-orchestrate-adk-docs` aparece como "Disconnected"
+**Solución:** Abre el archivo `.bob/mcp.json` y añade estas dos líneas al principio del arreglo `args` del servidor `watsonx-orchestrate-adk-docs`:
+
+```json
+"--with",
+"mcp<2.0.0",
+```
+
+El resultado debería verse así:
+
+```json
+"watsonx-orchestrate-adk-docs": {
+  "command": "uvx",
+  "args": [
+    "--with",
+    "mcp<2.0.0",
+    "--from",
+    "mcp-proxy==0.8.1",
+    "mcp-proxy",
+    "--transport",
+    "streamablehttp",
+    "https://developer.watson-orchestrate.ibm.com/mcp"
+  ],
+  ...
+}
+```
+
+Guarda el archivo y vuelve a conectar el servidor desde el panel de MCP de Bob (o reinicia Bob IDE).
+
 ## Referencia rápida
 
 ### Comandos útiles
