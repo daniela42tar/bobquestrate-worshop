@@ -25,7 +25,7 @@ Esta estimación incluye:
 - Configuración y resolución de problemas: 10-15 minutos
 - Preguntas y debate: 10-15 minutos
 
-**Nivel:** Principiante (Partes 1-4) a Avanzado (Parte 5)
+**Nivel:** Principiante (Partes 1-3) a Avanzado (Parte 4)
 
 **Requisitos previos:**
 

@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# Parte 5: Orquestación Multi-Agente y Flujos de Trabajo
+# Parte 4: Orquestación Multi-Agente y Flujos de Trabajo
 
 <p align="center">
   <img src="bobchestrate_part4.png" alt="Bobchestrate - Setup" width="700">
@@ -982,7 +982,7 @@ Con nombres únicos:
 
 ---
 
-## Parte 5: Probar los flujos de trabajo multi-agente
+## Parte 4: Probar los flujos de trabajo multi-agente
 
 ### Importar todos los agentes y herramientas
 

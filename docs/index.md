@@ -41,13 +41,13 @@ hide:
 
     <span class="card-badge">⏱️ 30 min</span> <span class="card-action">[Ir a la Parte 3 →](part3-custom-tools/README.md)</span>
 
--   ### 🧭 [Parte 5 — Orquestación multiagente](part4-multi-agent-orchestration/README.md) <span class="badge-featured">⭐ Avanzado</span>
+-   ### 🧭 [Parte 4 — Orquestación multiagente](part4-multi-agent-orchestration/README.md) <span class="badge-featured">⭐ Avanzado</span>
 
     ---
 
     Construir un conserje de viajes con cuatro agentes especialistas y un orquestador.
 
-    <span class="card-badge">⏱️ 30 min</span> <span class="card-action">[Ir a la Parte 5 →](part4-multi-agent-orchestration/README.md)</span>
+    <span class="card-badge">⏱️ 30 min</span> <span class="card-action">[Ir a la Parte 4 →](part4-multi-agent-orchestration/README.md)</span>
 
 -   ### 💡 [Prompts útiles de Bob](bob-prompts/helpful-prompts.md)
 

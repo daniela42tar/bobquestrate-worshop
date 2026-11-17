@@ -46,17 +46,6 @@
       {% endif %}
     {% endif %}
 
-    <!-- Search box -->
-    {% if "material/search" in config.plugins %}
-      {% include "partials/search.html" %}
-    {% endif %}
-
-    <!-- Repository information -->
-    {% if config.repo_url %}
-      <div class="md-header__source">
-        {% include "partials/source.html" %}
-      </div>
-    {% endif %}
   </nav>
 
   <!-- Navigation tabs (if enabled) -->

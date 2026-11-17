@@ -450,7 +450,7 @@ class WeatherTool(PythonTool):
 
 Ahora que tu agente tiene herramientas, ¡es hora de combinar varios agentes en un sistema multiagente!
 
-Continúa con [Parte 5: Orquestación multiagente](../part4-multi-agent-orchestration/README.md) →
+Continúa con [Parte 4: Orquestación multiagente](../part4-multi-agent-orchestration/README.md) →
 
 ## Recursos adicionales
 
