@@ -33,21 +33,29 @@ hide:
 
     <span class="card-badge">⏱️ 20 min</span> <span class="card-action">[Ir a la Parte 2 →](part2-first-agent/README.md)</span>
 
--   ### 📏 [Parte 3 — Reglas personalizadas de Bob](part3-bob-custom-rules/README.md)
+-   ### 🔧 [Parte 3 — Herramientas personalizadas](part3-custom-tools/README.md)
+
+    ---
+
+    Crear herramientas personalizadas en Python para que tus agentes puedan realizar acciones (consultar pedidos y tramitar reembolsos).
+
+    <span class="card-badge">⏱️ 30 min</span> <span class="card-action">[Ir a la Parte 3 →](part3-custom-tools/README.md)</span>
+
+-   ### 📏 [Parte 4 — Reglas personalizadas de Bob](part3-bob-custom-rules/README.md)
 
     ---
 
     Enseñar a Bob las convenciones de tu proyecto para generar código coherente.
 
-    <span class="card-badge">⏱️ 10 min</span> <span class="card-action">[Ir a la Parte 3 →](part3-bob-custom-rules/README.md)</span>
+    <span class="card-badge">⏱️ 10 min</span> <span class="card-action">[Ir a la Parte 4 →](part3-bob-custom-rules/README.md)</span>
 
--   ### 🧭 [Parte 4 — Orquestación multiagente](part4-multi-agent-orchestration/README.md) <span class="badge-featured">⭐ Avanzado</span>
+-   ### 🧭 [Parte 5 — Orquestación multiagente](part4-multi-agent-orchestration/README.md) <span class="badge-featured">⭐ Avanzado</span>
 
     ---
 
     Construir un conserje de viajes con cuatro agentes especialistas y un orquestador.
 
-    <span class="card-badge">⏱️ 30 min</span> <span class="card-action">[Ir a la Parte 4 →](part4-multi-agent-orchestration/README.md)</span>
+    <span class="card-badge">⏱️ 30 min</span> <span class="card-action">[Ir a la Parte 5 →](part4-multi-agent-orchestration/README.md)</span>
 
 -   ### 💡 [Prompts útiles de Bob](bob-prompts/helpful-prompts.md)
 

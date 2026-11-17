@@ -68,8 +68,9 @@ nav:
   - Introduction: introduction.md
   - Part 1 - Setup: part1-setup/README.md
   - Part 2 - First Agent: part2-first-agent/README.md
-  - Part 3 - Bob Custom Rules: part3-bob-custom-rules/README.md
-  - Part 4 - Multi-Agent Orchestration: part4-multi-agent-orchestration/README.md
+  - Part 3 - Custom Tools: part3-custom-tools/README.md
+  - Part 4 - Bob Custom Rules: part3-bob-custom-rules/README.md
+  - Part 5 - Multi-Agent Orchestration: part4-multi-agent-orchestration/README.md
   - Bob Prompts: bob-prompts/helpful-prompts.md
 
 # Plugins

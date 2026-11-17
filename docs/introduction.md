@@ -15,15 +15,15 @@ hide:
 
 ## Resumen del taller
 
-**Duración:** 75-90 minutos
+**Duración:** 105-120 minutos
 
 Esta estimación incluye:
 
-- Tiempo de instrucción principal: 55-65 minutos (todas las partes)
+- Tiempo de instrucción principal: 85-95 minutos (todas las partes)
 - Configuración y resolución de problemas: 10-15 minutos
 - Preguntas y debate: 10-15 minutos
 
-**Nivel:** Principiante (Partes 1-3) a Avanzado (Parte 4)
+**Nivel:** Principiante (Partes 1-4) a Avanzado (Parte 5)
 
 **Requisitos previos:**
 
@@ -41,8 +41,9 @@ Cada parte se apoya en la anterior y te lleva desde un entorno operativo hasta u
 |------|-------|------|
 | [1 — Configuración y entorno](part1-setup/README.md) | Configurar watsonx Orchestrate y comprobar que Bob es tu compañero de programación con IA | 15 min |
 | [2 — Tu primer agente](part2-first-agent/README.md) | Crear un agente «Hello World» y chatear con él | 20 min |
-| [3 — Reglas personalizadas de Bob](part3-bob-custom-rules/README.md) | Enseñar a Bob las convenciones de tu proyecto para generar código coherente | 10 min |
-| [4 — Orquestación multiagente](part4-multi-agent-orchestration/README.md) ⭐ | Construir un conserje de viajes con cuatro agentes especialistas y un orquestador | 30 min |
+| [3 — Herramientas personalizadas](part3-custom-tools/README.md) | Crear herramientas personalizadas en Python (consultar pedidos y reembolsos) y conectarlas a tu agente | 30 min |
+| [4 — Reglas personalizadas de Bob](part3-bob-custom-rules/README.md) | Enseñar a Bob las convenciones de tu proyecto para generar código coherente | 10 min |
+| [5 — Orquestación multiagente](part4-multi-agent-orchestration/README.md) ⭐ | Construir un conserje de viajes con cuatro agentes especialistas y un orquestador | 30 min |
 
 ## Cómo te ayuda Bob
 

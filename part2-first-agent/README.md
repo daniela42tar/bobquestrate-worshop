@@ -351,9 +351,9 @@ Bob, check this YAML file for syntax errors: [paste YAML]
 
 ## Próximos pasos
 
-Ahora que entiendes los agentes básicos, ¡aprende cómo configurar Bob IDE con reglas personalizadas para un desarrollo más eficiente!
+Ahora que entiendes los agentes básicos, ¡aprende cómo añadir herramientas personalizadas en Python a tus agentes!
 
-Continúa con [Parte 3: Usar reglas personalizadas con Bob IDE](../part3-bob-custom-rules/README.md) →
+Continúa con [Parte 3: Añadir herramientas personalizadas](../part3-custom-tools/README.md) →
 
 ## Recursos adicionales
 

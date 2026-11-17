@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# Parte 3: Usar Reglas Personalizadas con Bob IDE
+# Parte 4: Usar Reglas Personalizadas con Bob IDE
 
 <p align="center">
   <img src="bobchestrate_part3.png" alt="Bobchestrate - Setup" width="700">
@@ -283,7 +283,7 @@ Bob, please reload your custom rules and confirm you can see the watsonx Orchest
 
 ¡Ahora que entiendes cómo configurar Bob con reglas personalizadas, estás listo para añadir capacidades más potentes a tus agentes!
 
-Continúa con [Parte 4: Orquestación multi-agente](../part4-multi-agent-orchestration/README.md) →
+Continúa con [Parte 5: Orquestación multi-agente](../part4-multi-agent-orchestration/README.md) →
 
 ## Recursos adicionales
 

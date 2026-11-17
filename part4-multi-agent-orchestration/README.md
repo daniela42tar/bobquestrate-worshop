@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# Parte 4: Orquestación Multi-Agente y Flujos de Trabajo
+# Parte 5: Orquestación Multi-Agente y Flujos de Trabajo
 
 <p align="center">
   <img src="bobchestrate_part4.png" alt="Bobchestrate - Setup" width="700">
