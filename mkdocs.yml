@@ -13,6 +13,7 @@ repo_name: bobchestrate-workshop
 # Theme configuration
 theme:
   name: material
+  custom_dir: overrides
   language: en
   palette:
     # Light mode
@@ -36,7 +37,6 @@ theme:
     code: Roboto Mono
   features:
     - navigation.tracking
-    - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.top

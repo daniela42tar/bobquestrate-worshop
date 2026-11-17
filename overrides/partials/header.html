@@ -1,0 +1,68 @@
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+    <!-- Logo -->
+    <a href="{{ config.extra.homepage | default(nav.homepage.url, true) | url }}" title="{{ config.site_name }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+      {% include "partials/logo.html" %}
+    </a>
+
+    <!-- Mobile Drawer button for TOC / sidebar if needed -->
+    <label class="md-header__button md-icon" for="__drawer">
+      {% set icon = config.theme.icon.menu or "material/menu" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </label>
+
+    <!-- Header title linked to home page -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <a href="{{ config.extra.homepage | default(nav.homepage.url, true) | url }}" title="{{ config.site_name }}" style="color: inherit; text-decoration: none;">
+          <div class="md-header__topic">
+            <span class="md-ellipsis">
+              {{ config.site_name }}
+            </span>
+          </div>
+          <div class="md-header__topic" data-md-component="header-topic">
+            <span class="md-ellipsis">
+              {{ config.site_name }}
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Palette toggle -->
+    {% if config.theme.palette %}
+      {% if not config.theme.palette is mapping %}
+        {% include "partials/palette.html" %}
+      {% endif %}
+    {% endif %}
+
+    <!-- User preference: font size -->
+    {% if not "content.code.copy" in config.theme.features %}
+      {% if "content.action.edit" in config.theme.features %}
+        {% include "partials/actions/edit.html" %}
+      {% endif %}
+      {% if "content.action.view" in config.theme.features %}
+        {% include "partials/actions/view.html" %}
+      {% endif %}
+    {% endif %}
+
+    <!-- Search box -->
+    {% if "material/search" in config.plugins %}
+      {% include "partials/search.html" %}
+    {% endif %}
+
+    <!-- Repository information -->
+    {% if config.repo_url %}
+      <div class="md-header__source">
+        {% include "partials/source.html" %}
+      </div>
+    {% endif %}
+  </nav>
+
+  <!-- Navigation tabs (if enabled) -->
+  {% if "navigation.tabs" in config.theme.features %}
+    {% if not "navigation.tabs.sticky" in config.theme.features %}
+      {% include "partials/tabs.html" %}
+    {% endif %}
+  {% endif %}
+</header>

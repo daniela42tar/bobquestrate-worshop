@@ -9,9 +9,15 @@ article.md-content__inner:has(.home-cards-container) > h1:first-child,
   display: none !important;
 }
 
-/* Hide the top tab navigation bar on the home page only */
-body:has(.home-cards-container) .md-tabs {
+/* Hide top tab navigation bar globally if present */
+.md-tabs {
   display: none !important;
+}
+
+/* Make header title text act as a link to home page and styled cleanly */
+.md-header__title a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* 2. Container setup */
