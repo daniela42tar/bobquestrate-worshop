@@ -454,6 +454,11 @@ Continúa con [Parte 5: Orquestación multiagente](../part4-multi-agent-orchestr
 - [Gestión de herramientas](https://developer.watson-orchestrate.ibm.com/tools/manage_tool)
 - [Asociar conexiones a herramientas Python](https://developer.watson-orchestrate.ibm.com/connections/associate_connection_to_tool/python_connections)
 
+## 🎙️ Bonus: ¡Pídele al profesor que te muestre el agente de voz!
+
+¿Has terminado la Parte 3? Antes de pasar a la siguiente parte, **levanta la mano y pídele a tu profesor que te enseñe el agente de voz**. Verás cómo un agente de watsonx Orchestrate puede mantener una conversación hablada, usando herramientas como las que acabas de crear.
+
+
 ---
 
 **💡 Consejo profesional:** Usa Bob para generar plantillas de herramientas y luego personalízalas según tus necesidades.
