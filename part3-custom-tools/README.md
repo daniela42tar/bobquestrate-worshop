@@ -13,26 +13,26 @@ hide:
 
 **Objetivo:** Crear herramientas personalizadas en Python para que tus agentes puedan realizar acciones
 
-## What You'll Learn
+## Lo que aprenderás
 
-- How to create Python tools for watsonx Orchestrate
-- Tool structure and best practices
-- Connecting tools to agents
-- Using Bob to generate and debug tools
+- Cómo crear herramientas Python para watsonx Orchestrate
+- La estructura de las herramientas y las buenas prácticas
+- Cómo conectar herramientas a los agentes
+- Cómo usar Bob para generar y depurar herramientas
 
-## Why Custom Tools?
+## ¿Por qué herramientas personalizadas?
 
-Tools extend your agent's capabilities beyond conversation. They allow agents to:
+Las herramientas amplían las capacidades de tu agente más allá de la conversación. Permiten a los agentes:
 
-- 🔍 Query databases and APIs
-- 📊 Process and analyze data
-- 📝 Create and modify files
-- 🔧 Perform calculations and transformations
-- 🌐 Integrate with external systems
+- 🔍 Consultar bases de datos y APIs
+- 📊 Procesar y analizar datos
+- 📝 Crear y modificar archivos
+- 🔧 Realizar cálculos y transformaciones
+- 🌐 Integrarse con sistemas externos
 
-## Tool Structure
+## Estructura de una herramienta
 
-A watsonx Orchestrate Python tool has this structure:
+Una herramienta Python de watsonx Orchestrate tiene esta estructura:
 
 ```python
 from ibm_watsonx_orchestrate.agent_builder.tools import tool
@@ -54,7 +54,7 @@ def my_tool(param1: str) -> dict:
     }
 ```
 
-**Alternative: Using the decorator's description parameter:**
+**Alternativa: usar el parámetro description del decorador:**
 
 ```python
 from ibm_watsonx_orchestrate.agent_builder.tools import tool
@@ -78,29 +78,29 @@ def my_tool(param1: str) -> dict:
     }
 ```
 
-**Key Points:**
+**Puntos clave:**
 
-- Use the `@tool` decorator to define tools
-- Tool name defaults to the function name (or specify with `@tool(name="custom_name")`)
-- Description can be provided in two ways:
-  - **Via docstring** (recommended): Extracted from the function's docstring
-  - **Via decorator parameter**: Pass directly to the decorator as `@tool(description="Your description here")`
-- Parameter types and descriptions come from type hints and docstring Args section
-- Must use Google-style docstrings for proper parameter documentation when using docstring approach
-- The `@tool` decorator also accepts other optional parameters like `expect_credentials` for tools requiring authentication
+- Usa el decorador `@tool` para definir herramientas
+- El nombre de la herramienta es por defecto el nombre de la función (o se especifica con `@tool(name="custom_name")`)
+- La descripción se puede proporcionar de dos formas:
+  - **Mediante el docstring** (recomendado): se extrae del docstring de la función
+  - **Mediante un parámetro del decorador**: se pasa directamente al decorador como `@tool(description="Your description here")`
+- Los tipos y las descripciones de los parámetros provienen de las anotaciones de tipo y de la sección Args del docstring
+- Si usas el docstring, debes emplear docstrings de estilo Google para documentar bien los parámetros
+- El decorador `@tool` también acepta otros parámetros opcionales, como `expect_credentials`, para herramientas que requieren autenticación
 
-> 📖 **Reference:** For complete details on the `@tool` decorator and its parameters, see the [Authoring Python-Based Tools](https://developer.watson-orchestrate.ibm.com/tools/create_tool#authoring-python-based-tools) documentation.
+> 📖 **Referencia:** Para ver todos los detalles del decorador `@tool` y sus parámetros, consulta la documentación [Authoring Python-Based Tools](https://developer.watson-orchestrate.ibm.com/tools/create_tool#authoring-python-based-tools).
 
-## Step 1: Create an Order Status Tool
+## Paso 1: Crear una herramienta de estado de pedido
 
-Let's create a tool that checks order status (simulated for this workshop).
+Vamos a crear una herramienta que consulte el estado de un pedido (simulada para este taller).
 
-### Ask Bob:
+### Pregúntale a Bob:
 ```
 Bob, create a Python tool for watsonx Orchestrate that checks order status. It should take an order_id parameter and return mock order information including status, items, and delivery date.
 ```
 
-Or create it manually:
+O créala manualmente:
 
 ```python
 # order_status_tool.py
@@ -155,15 +155,15 @@ def check_order_status(order_id: str) -> dict:
     }
 ```
 
-## Step 2: Create a Refund Processing Tool
+## Paso 2: Crear una herramienta de procesamiento de reembolsos
 
-Now let's create a tool that processes refund requests.
+Ahora vamos a crear una herramienta que procese solicitudes de reembolso.
 
-### Ask Bob:
+### Pregúntale a Bob:
 ```
 Bob, create a Python tool that processes refund requests. It should take order_id, reason, and amount parameters, validate them, and return a refund confirmation.
 ```
-An example what Bob might come up with:
+Un ejemplo de lo que Bob podría generar:
 ```python
 # refund_tool.py
 from ibm_watsonx_orchestrate.agent_builder.tools import tool
@@ -227,13 +227,13 @@ def process_refund(order_id: str, reason: str, amount: float) -> dict:
     }
 ```
 
->NOTE: You might see Bob ceating also tests for the tools and some tools related documentation. If this is the case, you're welcome to explore those files as well.
+>NOTA: Es posible que Bob cree también pruebas para las herramientas y algo de documentación relacionada. Si es así, puedes explorar esos archivos también.
 
-## Step 3: Import Your Tools
+## Paso 3: Importar tus herramientas
 
-### IMPORTANT: Since the workshop participants will be using the same watsonx Orchestrate environment, RENAME your _tool names_ (function names) inside the tool python files by adding your initials as a postfix. REMEMBER to save your changes! ###
+### IMPORTANTE: Como los participantes del taller usarán el mismo entorno de watsonx Orchestrate, RENOMBRA los _nombres de tus herramientas_ (nombres de las funciones) dentro de los archivos Python añadiendo tus iniciales como sufijo. ¡RECUERDA guardar los cambios! ###
 
->For example, `def check_order_status` becomes `def check_order_status_JKJ`. Make sure to use the same postfix for all your tools.
+>Por ejemplo, `def check_order_status` pasa a ser `def check_order_status_JKJ`. Asegúrate de usar el mismo sufijo en todas tus herramientas.
 
 <img src="images/image-1.png" alt="" width="450px">
 
@@ -241,44 +241,44 @@ def process_refund(order_id: str, reason: str, amount: float) -> dict:
 
 <img src="images/image.png" alt="" width="480px">
 
-Notice that now that Bob is uing the custom wxO development rule, the tools are stored in _**tools**_ directory.
+Fíjate en que, ahora que Bob usa la regla personalizada de desarrollo para wxO, las herramientas se guardan en el directorio _**tools**_.
 
-Import the tools into watsonx Orchestrate:
+Importa las herramientas en watsonx Orchestrate:
 
 ```bash
 orchestrate tools import -k python -f tools/check_order_status.py
 orchestrate tools import -k python -f tools/process_refund.py
 ```
 
->NOTE: The name of the python files - when Bob generates them - might be different what is shown here. Use the file names as Bob created them for you.
+>NOTA: Los nombres de los archivos Python generados por Bob pueden ser distintos de los que se muestran aquí. Usa los nombres de archivo tal como Bob los creó.
 
-💡 OR ask Bob to do that for you:
+💡 O pídele a Bob que lo haga por ti:
 
 ```bash
 Import the created tools to my active wxO environment
 ```
 
 
-If you see [WARNING] messages, it's okay. These are caused by a Langchain bug in doc string parsing.
+Si ves mensajes [WARNING], no pasa nada. Los causa un error de Langchain al analizar los docstrings.
 
-Verify they were imported:
+Verifica que se importaron:
 ```
 orchestrate tools list | grep -E "<your_initials>", for example: orchestrate tools list | grep -E "JKJ"
 ```
 
-You should see your tools listed!
+¡Deberías ver tus herramientas en la lista!
 
-## Step 4: Create a Customer Support Agent with Tools
+## Paso 4: Crear un agente de atención al cliente con herramientas
 
-Now create an agent that uses these tools. You can use the definition below - it was also created by Bob.
+Ahora crea un agente que use estas herramientas. Puedes usar la definición de abajo; también la creó Bob.
 
-1. Create a new file `customer-support-agent.yaml` in the `agents` directory of your workspace. The directory should have been created by Bob when it created the tools. If not, create it manually.
-2. Copy the content below into the file and save it.
+1. Crea un nuevo archivo `customer-support-agent.yaml` en el directorio `agents` de tu espacio de trabajo. Bob debería haber creado ese directorio al crear las herramientas. Si no existe, créalo manualmente.
+2. Copia el contenido de abajo en el archivo y guárdalo.
 
 
-You can also create your own agent definition if you prefer.
+También puedes crear tu propia definición de agente si lo prefieres.
 
-## IMPORTANT: Make sure to change the tool names in the agent definition to match the names of the tools you imported! ALSO the postfix the name of the agent with your initials! ###
+## IMPORTANTE: ¡Asegúrate de cambiar los nombres de las herramientas en la definición del agente para que coincidan con los nombres de las herramientas que importaste! ¡Y añade también tus iniciales como sufijo al nombre del agente! ###
 
 ```yaml
 # customer-support-agent.yaml
@@ -319,29 +319,29 @@ tools:
 
 ```
 
-Import the agent:
+Importa el agente:
 ```bash
 orchestrate agents import -f agents/customer-support-agent.yaml
 ```
 
-## Step 5: Test Your Agent with Tools
+## Paso 5: Probar tu agente con herramientas
 
-Test the agent:
+Prueba el agente:
 
 ```bash
 orchestrate chat ask -n customer_support_agent_<your_initials_here>
 ```
 
-Try these test scenarios:
+Prueba estos escenarios:
 
-**Scenario 1: Check Order Status**
+**Escenario 1: Consultar el estado de un pedido**
 ```
 User: Can you check the status of order ORD-12345?
 ```
 
-The agent should call the `check_order_status` tool and present the results.
+El agente debería llamar a la herramienta `check_order_status` y presentar los resultados.
 
-**Scenario 2: Process Refund**
+**Escenario 2: Procesar un reembolso**
 ```
 User: I need to request a refund for order ORD-12345
 Agent: [asks for reason]
@@ -350,49 +350,49 @@ Agent: [provides you with the refund amount / asks for confirmation]
 User: $99.99
 ```
 
-The agent should call the `process_refund` tool and provide confirmation.
+El agente debería llamar a la herramienta `process_refund` y proporcionar la confirmación.
 
-**Scenario 3: Error Handling**
+**Escenario 3: Manejo de errores**
 ```
 User: Check order status for ABC123
 ```
 
-The agent should handle the invalid order ID gracefully.
+El agente debería gestionar con elegancia el ID de pedido no válido.
 
-## Step 6: Debug Tool Issues
+## Paso 6: Depurar problemas con las herramientas
 
-If your tools aren't working, ask Bob for help:
+Si tus herramientas no funcionan, pídele ayuda a Bob:
 
 ```
 Bob, my agent isn't calling the check_order_status tool. Here's the agent YAML and tool code: [paste code]
 ```
 
-Common issues:<br>
-- Tool name mismatch between agent YAML and tool definition<br>
-- Missing or incorrect parameter descriptions<br>
-- Tool not imported successfully<br>
-- Agent instructions don't mention when to use the tool
+Problemas frecuentes:<br>
+- El nombre de la herramienta no coincide entre el YAML del agente y la definición de la herramienta<br>
+- Descripciones de parámetros ausentes o incorrectas<br>
+- La herramienta no se importó correctamente<br>
+- Las instrucciones del agente no mencionan cuándo usar la herramienta
 
-## Best Practices for Tools
+## Buenas prácticas para herramientas
 
-### ✅ DO:
-- Provide clear, descriptive tool names
-- Write detailed parameter descriptions
-- Include input validation
-- Return structured, consistent responses
-- Handle errors gracefully
-- Add helpful error messages
+### ✅ HAZ:
+- Usa nombres de herramienta claros y descriptivos
+- Escribe descripciones detalladas de los parámetros
+- Incluye validación de entradas
+- Devuelve respuestas estructuradas y coherentes
+- Gestiona los errores con elegancia
+- Añade mensajes de error útiles
 
-### ❌ DON'T:
-- Use vague tool descriptions
-- Skip parameter validation
-- Return inconsistent response formats
-- Ignore error cases
-- Make tools do too many things (keep them focused)
+### ❌ NO HAGAS:
+- Usar descripciones de herramienta vagas
+- Omitir la validación de parámetros
+- Devolver formatos de respuesta inconsistentes
+- Ignorar los casos de error
+- Hacer que las herramientas hagan demasiadas cosas (mantenlas enfocadas)
 
-## Advanced: Tools with External APIs
+## Avanzado: Herramientas con APIs externas
 
-Tools can call real APIs. Here's an example structure:
+Las herramientas pueden llamar a APIs reales. Aquí tienes un ejemplo de estructura:
 
 ```python
 import requests
@@ -433,21 +433,6 @@ class WeatherTool(PythonTool):
         
         return response.json()
 ```
-
-## Exercises
-
-Ready to practice? We've prepared a comprehensive set of exercises to help you master custom tool creation!
-
-📝 **[View All Exercises](exercises.md)** - Complete exercises ranging from easy to advanced
-
-We strongly recommend working through at least a few of these exercises before moving forward with the workshop. They'll help solidify your understanding of:
-
-- Tool structure and best practices
-- Input validation and error handling
-- Creating tools that agents can effectively use
-- Debugging common tool issues
-
-The exercises include detailed requirements, test cases, and success criteria to guide your learning.
 
 ## Puntos clave
 
