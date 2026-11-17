@@ -33,10 +33,7 @@ This estimate includes:
 ### 1. Hello World Agent (Part 2)
 Your first simple agent to understand the basics of agent configuration and behavior.
 
-### 2. A Bob That Knows Your Project (Part 3)
-Custom rules that teach Bob the watsonx Orchestrate ADK conventions, so the code it generates is consistent from the start.
-
-### 3. Travel Concierge System (Part 4)
+### 2. Travel Concierge System (Part 4)
 A **multi-agent system** with an orchestrator and four specialist agents:
 - Flight, hotel, activity and budget specialists, each with domain-specific tools
 - An orchestrator agent with intelligent routing
@@ -55,12 +52,6 @@ A **multi-agent system** with an orchestrator and four specialist agents:
 - Understand agent instructions and behavior
 - Test your agent with the chat interface
 - Learn how to use Bob to help debug issues
-
-### [Part 3: Using Custom Rules with Bob IDE](./part3-bob-custom-rules/README.md) (10 min)
-- Learn how to configure Bob with custom development rules
-- Understand the watsonx Orchestrate development rule
-- Set up project-specific conventions for Bob
-- Create your own custom rules for consistent development
 
 ### [Part 4: Multi-Agent Orchestration](./part4-multi-agent-orchestration/README.md) (30 min)
 - Understand when and why to use multi-agent systems
@@ -115,11 +106,6 @@ bobchestrate-workshop/
 │   ├── exercises.md
 │   └── images/
 │
-├── part3-bob-custom-rules/                  # Using Custom Rules with Bob (10 min)
-│   ├── README.md
-│   ├── wxo-dev-rule.md
-│   └── wxo-dev-rule-enhanced.md
-│
 ├── part4-multi-agent-orchestration/         # Multi-Agent Orchestration (30 min)
 │   ├── README.md
 │   ├── travel-concierge-agent.yaml          # Orchestrator agent
@@ -166,7 +152,6 @@ By the end of this workshop, you will:
 
 ✅ Understand watsonx Orchestrate agent architecture
 ✅ Create and configure agents using YAML specifications
-✅ Teach Bob your project conventions for consistent code generation
 ✅ Design and orchestrate multi-agent systems
 ✅ Leverage Bob as an AI pair programmer
 

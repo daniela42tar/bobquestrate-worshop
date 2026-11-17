@@ -41,14 +41,6 @@ hide:
 
     <span class="card-badge">⏱️ 30 min</span> <span class="card-action">[Ir a la Parte 3 →](part3-custom-tools/README.md)</span>
 
--   ### 📏 [Parte 4 — Reglas personalizadas de Bob](part3-bob-custom-rules/README.md)
-
-    ---
-
-    Enseñar a Bob las convenciones de tu proyecto para generar código coherente.
-
-    <span class="card-badge">⏱️ 10 min</span> <span class="card-action">[Ir a la Parte 4 →](part3-bob-custom-rules/README.md)</span>
-
 -   ### 🧭 [Parte 5 — Orquestación multiagente](part4-multi-agent-orchestration/README.md) <span class="badge-featured">⭐ Avanzado</span>
 
     ---

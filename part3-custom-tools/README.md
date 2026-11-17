@@ -444,9 +444,9 @@ class WeatherTool(PythonTool):
 
 ## Próximos pasos
 
-Ahora que tu agente tiene herramientas, ¡aprende cómo configurar Bob IDE con reglas personalizadas para un desarrollo más coherente!
+Ahora que tu agente tiene herramientas, ¡es hora de combinar varios agentes en un sistema multiagente!
 
-Continúa con [Parte 4: Usar reglas personalizadas con Bob IDE](../part3-bob-custom-rules/README.md) →
+Continúa con [Parte 5: Orquestación multiagente](../part4-multi-agent-orchestration/README.md) →
 
 ## Recursos adicionales
 

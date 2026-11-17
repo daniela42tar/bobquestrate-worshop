@@ -33,10 +33,7 @@ Esta estimación incluye:
 ### 1. Agente «Hello World» (Parte 2)
 Tu primer agente sencillo para entender los fundamentos de la configuración y el comportamiento de un agente.
 
-### 2. Un Bob que conoce tu proyecto (Parte 3)
-Reglas personalizadas que enseñan a Bob las convenciones del ADK de watsonx Orchestrate, de modo que el código que genere sea coherente desde el principio.
-
-### 3. Sistema Travel Concierge (Parte 4)
+### 2. Sistema Travel Concierge (Parte 4)
 Un **sistema multiagente** con un orquestador y cuatro agentes especialistas:
 - Especialistas en vuelos, hoteles, actividades y presupuesto, cada uno con herramientas específicas de su dominio
 - Un agente orquestador con enrutamiento inteligente
@@ -55,12 +52,6 @@ Un **sistema multiagente** con un orquestador y cuatro agentes especialistas:
 - Entender las instrucciones y el comportamiento de un agente
 - Probar tu agente con la interfaz de chat
 - Aprender a usar Bob para depurar problemas
-
-### [Parte 3: Uso de reglas personalizadas con Bob IDE](./part3-bob-custom-rules/README.md) (10 min)
-- Aprender a configurar Bob con reglas de desarrollo personalizadas
-- Entender la regla de desarrollo de watsonx Orchestrate
-- Definir convenciones específicas del proyecto para Bob
-- Crear tus propias reglas personalizadas para un desarrollo coherente
 
 ### [Parte 4: Orquestación multiagente](./part4-multi-agent-orchestration/README.md) (30 min)
 - Entender cuándo y por qué usar sistemas multiagente
@@ -115,11 +106,6 @@ bobchestrate-workshop/
 │   ├── hello-agent-EXAMPLE.yaml
 │   ├── exercises.md
 │   └── images/
-│
-├── part3-bob-custom-rules/                  # Uso de reglas personalizadas con Bob (10 min)
-│   ├── README.md
-│   ├── wxo-dev-rule.md
-│   └── wxo-dev-rule-enhanced.md
 │
 ├── part4-multi-agent-orchestration/         # Orquestación multiagente (30 min)
 │   ├── README.md
