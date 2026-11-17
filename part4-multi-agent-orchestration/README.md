@@ -169,7 +169,7 @@ El orquestador actúa como supervisor sin herramientas de dominio propias, deleg
 
 ### Paso 1: Crear el especialista en vuelos
 
-[Descargar](./flight-specialist-agent.yaml) el ejemplo `flight-specialist-agent.yaml` o pedírselo a Bob (mira el prompt de ejemplo bajo el YAML). **PISTA**: deberías pedírselo a Bob. Creará algo mejor que el simple ejemplo 🤓 Y solo cuesta alrededor de 0,3 bobcoins 🪙
+[Descargar](./flight_specialist_agent.yaml) el ejemplo `flight_specialist_agent.yaml` o pedírselo a Bob (mira el prompt de ejemplo bajo el YAML). **PISTA**: deberías pedírselo a Bob. Creará algo mejor que el simple ejemplo 🤓 Y solo cuesta alrededor de 0,3 bobcoins 🪙
 
 ```yaml
 spec_version: v1
@@ -225,7 +225,7 @@ Cuando Bob termine, tendrás un nuevo fichero de agente guardado en tu directori
 
 ### Paso 2: Crear el especialista en hoteles
 
-[Descargar](./hotel-specialist-agent.yaml) el ejemplo `hotel-specialist-agent.yaml` o pedírselo a Bob. A estas alturas ya deberías tener una idea de cómo formular el prompt para este agente 😉 Puedes intentarlo varias veces hasta quedar satisfecho con el resultado.
+[Descargar](./hotel_specialist_agent.yaml) el ejemplo `hotel_specialist_agent.yaml` o pedírselo a Bob. A estas alturas ya deberías tener una idea de cómo formular el prompt para este agente 😉 Puedes intentarlo varias veces hasta quedar satisfecho con el resultado.
 
 ```yaml
 spec_version: v1
@@ -275,7 +275,7 @@ llm: groq/openai/gpt-oss-120b
 
 ### Paso 3: Crear el planificador de actividades
 
-[Descargar](./activity-planner-agent.yaml) el ejemplo `activity-planner-agent.yaml` o pedírselo a Bob.
+[Descargar](./activity_planner_agent.yaml) el ejemplo `activity_planner_agent.yaml` o pedírselo a Bob.
 
 ```yaml
 spec_version: v1
@@ -325,7 +325,7 @@ llm: groq/openai/gpt-oss-120b
 
 ### Paso 4: Crear el asesor de presupuesto
 
-[Descargar](./budget-advisor-agent.yaml) el ejemplo `budget-advisor-agent.yaml` o pedírselo a Bob. PISTA: ¿has pensado alguna vez en pedirle a Bob un prompt para crear un tipo concreto de agente? Solo lo digo 😉
+[Descargar](./budget_advisor_agent.yaml) el ejemplo `budget_advisor_agent.yaml` o pedírselo a Bob. PISTA: ¿has pensado alguna vez en pedirle a Bob un prompt para crear un tipo concreto de agente? Solo lo digo 😉
 
 ```yaml
 spec_version: v1
@@ -382,7 +382,7 @@ llm: groq/openai/gpt-oss-120b
 
 El orquestador necesita una lógica de enrutamiento clara:
 
-[Descargar](./travel-concierge-agent.yaml) el ejemplo `travel-concierge-agent.yaml` o pedírselo a Bob (mira el prompt de ejemplo bajo el YAML).
+[Descargar](./travel_concierge_agent.yaml) el ejemplo `travel_concierge_agent.yaml` o pedírselo a Bob (mira el prompt de ejemplo bajo el YAML).
 
 ```yaml
 spec_version: v1
@@ -893,7 +893,7 @@ Dado que todos los participantes del taller comparten el mismo entorno de watson
 Usa este patrón para todas tus herramientas y agentes:
 
 - **Herramientas**: `tool_name_XX` (donde XX son tus iniciales)
-- **Nombres de fichero de agente YAML**: `agent-name-XX.yaml` (se permiten guiones en el nombre de fichero)
+- **Nombres de fichero de agente YAML**: `agent_name_XX.yaml` (usa guiones bajos también en el nombre de fichero)
 - **Campo name del agente**: `agent_name_XX` (usa guiones bajos, no guiones)
 
 ### Ejemplo
@@ -916,7 +916,7 @@ def book_flight_JS(...):  # Added _JS postfix
 
 **Ficheros de agente:**
 ```yaml
-# Filename: flight-specialist-agent-JS.yaml (dashes OK in filename)
+# Filename: flight_specialist_agent_JS.yaml (underscores in filename)
 name: flight_specialist_JS  # IMPORTANT: Use underscores in name field, not dashes!
 description: Specialist agent for flight bookings
 instructions: |
@@ -930,8 +930,8 @@ tools:
 
 **⚠️ Regla de nomenclatura crítica:**
 
-- El **nombre de fichero** YAML puede usar guiones: `flight-specialist-agent-JS.yaml`
-- El **campo name** del agente debe usar guiones bajos: `name: flight_specialist_JS`
+- El **nombre de fichero** YAML también usa guiones bajos: `flight_specialist_agent_JS.yaml`
+- El **campo name** del agente debe usar guiones bajos (igual que el fichero): `name: flight_specialist_JS`
 - Este es un requisito de watsonx Orchestrate para el registro correcto del agente
 
 ### Lista de verificación de nomenclatura completa
@@ -947,15 +947,15 @@ Antes de importar, asegúrate de haber renombrado:
 
 **✅ Ficheros de agentes:**
 
-- [ ] Campo `name` del agente en `flight-specialist-agent.yaml`
+- [ ] Campo `name` del agente en `flight_specialist_agent.yaml`
 - [ ] Referencias de herramientas en la sección `tools`
-- [ ] Campo `name` del agente en `hotel-specialist-agent.yaml`
+- [ ] Campo `name` del agente en `hotel_specialist_agent.yaml`
 - [ ] Referencias de herramientas en la sección `tools`
-- [ ] Campo `name` del agente en `activity-planner-agent.yaml`
+- [ ] Campo `name` del agente en `activity_planner_agent.yaml`
 - [ ] Referencias de herramientas en la sección `tools`
-- [ ] Campo `name` del agente en `budget-advisor-agent.yaml`
+- [ ] Campo `name` del agente en `budget_advisor_agent.yaml`
 - [ ] Referencias de herramientas en la sección `tools`
-- [ ] Campo `name` del agente en `travel-concierge-agent.yaml`
+- [ ] Campo `name` del agente en `travel_concierge_agent.yaml`
 - [ ] Nombres de agentes colaboradores en la sección `collaborators`
 
 **💡 Pregúntale a Bob:**
@@ -994,13 +994,13 @@ orchestrate tools import -k python -f tools/activity_tools.py
 orchestrate tools import -k python -f tools/budget_tools.py
 
 # Import specialist agents
-orchestrate agents import -f agents/flight-specialist-agent.yaml
-orchestrate agents import -f agents/hotel-specialist-agent.yaml
-orchestrate agents import -f agents/activity-planner-agent.yaml
-orchestrate agents import -f agents/budget-advisor-agent.yaml
+orchestrate agents import -f agents/flight_specialist_agent.yaml
+orchestrate agents import -f agents/hotel_specialist_agent.yaml
+orchestrate agents import -f agents/activity_planner_agent.yaml
+orchestrate agents import -f agents/budget_advisor_agent.yaml
 
 # Import orchestrator (must be last, after collaborators exist)
-orchestrate agents import -f travel-concierge-agent.yaml
+orchestrate agents import -f travel_concierge_agent.yaml
 ```
 **💡 Pregúntale a Bob:**
 ```
@@ -1072,7 +1072,7 @@ tools:
   - cancel_flight
 
 # ❌ Bad - Too broad
-name: travel-specialist
+name: travel_specialist
 tools:
   - search_flights
   - search_hotels
@@ -1352,7 +1352,7 @@ def test_flight_specialist_search():
     and returns flight information
     """
     # Load the specialist agent
-    agent = Agent.from_yaml("flight-specialist-agent.yaml")
+    agent = Agent.from_yaml("flight_specialist_agent.yaml")
     
     # Send a query directly to the specialist
     response = agent.chat("Find flights from NYC to LAX on Dec 15")
@@ -1376,7 +1376,7 @@ def test_flight_specialist_with_mock_tools():
         }
     
     # Load agent and replace tool with mock
-    agent = Agent.from_yaml("flight-specialist-agent.yaml")
+    agent = Agent.from_yaml("flight_specialist_agent.yaml")
     agent.tools["search_flights"] = mock_search_flights
     
     response = agent.chat("Find flights from NYC to LAX")
@@ -1404,7 +1404,7 @@ def test_orchestrator_routes_to_flight_specialist():
     Test that orchestrator recognizes flight queries and routes to flight_specialist
     """
     # Load the orchestrator agent
-    orchestrator = Agent.from_yaml("travel-concierge-agent.yaml")
+    orchestrator = Agent.from_yaml("travel_concierge_agent.yaml")
     
     # Ask about flights
     response = orchestrator.chat("I need to book a flight to Paris")
@@ -1420,7 +1420,7 @@ def test_orchestrator_routes_to_hotel_specialist():
     """
     Test that orchestrator recognizes hotel queries
     """
-    orchestrator = Agent.from_yaml("travel-concierge-agent.yaml")
+    orchestrator = Agent.from_yaml("travel_concierge_agent.yaml")
     
     response = orchestrator.chat("Find me a hotel in Paris")
     
@@ -1431,7 +1431,7 @@ def test_orchestrator_handles_ambiguous_query():
     """
     Test that orchestrator asks clarifying questions for ambiguous requests
     """
-    orchestrator = Agent.from_yaml("travel-concierge-agent.yaml")
+    orchestrator = Agent.from_yaml("travel_concierge_agent.yaml")
     
     response = orchestrator.chat("I want to go to Paris")
     
@@ -1456,7 +1456,7 @@ def test_complete_trip_planning_workflow():
     """
     Test a realistic multi-turn conversation that uses multiple specialists
     """
-    orchestrator = Agent.from_yaml("travel-concierge-agent.yaml")
+    orchestrator = Agent.from_yaml("travel_concierge_agent.yaml")
     
     # Turn 1: Initial request
     response1 = orchestrator.chat("I want to plan a trip to Tokyo in March")
@@ -1482,7 +1482,7 @@ def test_error_recovery_workflow():
     """
     Test that system handles errors gracefully in multi-agent workflow
     """
-    orchestrator = Agent.from_yaml("travel-concierge-agent.yaml")
+    orchestrator = Agent.from_yaml("travel_concierge_agent.yaml")
     
     # Request with invalid date
     response = orchestrator.chat("Find flights to Paris on February 30")
@@ -1586,7 +1586,7 @@ Añade un "Especialista en alquiler de coches" al sistema de viajes.
 
 **Requisitos:**
 
-- Crear `car-rental-specialist-agent.yaml`
+- Crear `car_rental_specialist_agent.yaml`
 - Crear `car_rental_tools.py` con funciones de búsqueda y reserva
 - Actualizar `travel_concierge` para incluir el nuevo especialista
 - Probar el enrutamiento al especialista de alquiler de coches

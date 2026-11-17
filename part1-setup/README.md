@@ -344,7 +344,7 @@ Importa un modo personalizado preconfigurado y especializado para construir agen
 
 Descarga el fichero de configuración del modo:
 
-1. El fichero está en: [wxo-agent-architect-export.yaml](files/wxo-agent-architect-export.yaml)
+1. El fichero está en: [wxo_agent_architect_export.yaml](files/wxo_agent_architect_export.yaml)
 2. Haz clic en el botón **Download raw file**
 
       <img src="images/image-10.png" alt="Download the raw file" width="300px">
@@ -356,7 +356,7 @@ Descarga el fichero de configuración del modo:
 
       <img src="images/image-11.png" alt="Import custom mode" width="400px">
 
-7. Selecciona el fichero `wxo-agent-architect-export.yaml` que descargaste y haz clic en **Open**
+7. Selecciona el fichero `wxo_agent_architect_export.yaml` que descargaste y haz clic en **Open**
 8. Deberías ver un mensaje de confirmación indicando que el modo se importó correctamente y verlo aparecer en el panel de modos
 
 El modo "WXO Agent Architect" importado incluye:

@@ -97,22 +97,22 @@ bobchestrate-workshop/
 │   ├── README.md
 │   ├── verify-setup.py
 │   ├── files/
-│   │   └── wxo-agent-architect-export.yaml  # Pre-configured mode export
+│   │   └── wxo_agent_architect_export.yaml  # Pre-configured mode export
 │   └── images/
 │
 ├── part2-first-agent/                       # Building Your First Agent (20 min)
 │   ├── README.md
-│   ├── hello-agent-EXAMPLE.yaml
+│   ├── hello_agent_EXAMPLE.yaml
 │   ├── exercises.md
 │   └── images/
 │
 ├── part4-multi-agent-orchestration/         # Multi-Agent Orchestration (30 min)
 │   ├── README.md
-│   ├── travel-concierge-agent.yaml          # Orchestrator agent
-│   ├── flight-specialist-agent.yaml         # Specialist agents
-│   ├── hotel-specialist-agent.yaml
-│   ├── activity-planner-agent.yaml
-│   ├── budget-advisor-agent.yaml
+│   ├── travel_concierge_agent.yaml          # Orchestrator agent
+│   ├── flight_specialist_agent.yaml         # Specialist agents
+│   ├── hotel_specialist_agent.yaml
+│   ├── activity_planner_agent.yaml
+│   ├── budget_advisor_agent.yaml
 │   └── *_tools.py                           # Domain-specific tools
 │
 ├── advanced/                                # Advanced workshop content

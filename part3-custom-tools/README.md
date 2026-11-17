@@ -272,7 +272,7 @@ orchestrate tools list | grep -E "<your_initials>", for example: orchestrate too
 
 Ahora crea un agente que use estas herramientas. Puedes usar la definición de abajo; también la creó Bob.
 
-1. Crea un nuevo archivo `customer-support-agent.yaml` en el directorio `agents` de tu espacio de trabajo. Bob debería haber creado ese directorio al crear las herramientas. Si no existe, créalo manualmente.
+1. Crea un nuevo archivo `customer_support_agent.yaml` en el directorio `agents` de tu espacio de trabajo. Bob debería haber creado ese directorio al crear las herramientas. Si no existe, créalo manualmente.
 2. Copia el contenido de abajo en el archivo y guárdalo.
 
 
@@ -281,7 +281,7 @@ También puedes crear tu propia definición de agente si lo prefieres.
 ## IMPORTANTE: ¡Asegúrate de cambiar los nombres de las herramientas en la definición del agente para que coincidan con los nombres de las herramientas que importaste! ¡Y añade también tus iniciales como sufijo al nombre del agente! ###
 
 ```yaml
-# customer-support-agent.yaml
+# customer_support_agent.yaml
 spec_version: v1
 kind: native
 name: customer_support_agent_<your_initials_here>
@@ -321,7 +321,7 @@ tools:
 
 Importa el agente:
 ```bash
-orchestrate agents import -f agents/customer-support-agent.yaml
+orchestrate agents import -f agents/customer_support_agent.yaml
 ```
 
 ## Paso 5: Probar tu agente con herramientas
