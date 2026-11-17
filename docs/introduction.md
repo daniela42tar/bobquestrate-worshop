@@ -11,6 +11,8 @@ hide:
 
 ¡Te damos la bienvenida! Este taller te guiará en la creación de agentes de IA con IBM watsonx Orchestrate. Por el camino contarás con IBM Bob, un asistente de programación basado en IA, que te echará una mano.
 
+> ℹ️ Este taller está basado en el taller más extenso [Bobchestrate Workshop](https://juseljuk.github.io/bobchestrate-workshop/). Si deseas realizar la versión extendida completa, ¡haz clic en el enlace!
+
 > 📊 **Facilitadores del taller:** Usad la [presentación de introducción del Bobchestrate Workshop](Bobchestrate%20Workshop.pptx) para presentar el taller a los participantes antes de empezar.
 
 ## Resumen del taller

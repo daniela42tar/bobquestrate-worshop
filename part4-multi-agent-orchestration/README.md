@@ -1693,3 +1693,5 @@ En esta lección aprendiste:
 ---
 
 **¿Quieres saber más?** Esto completa el módulo avanzado de orquestación multi-agente. ¡Ahora puedes aplicar estos patrones para construir sistemas de agentes sofisticados para cualquier dominio! 🚀
+
+> 💡 Este contenido está basado en el taller más extenso disponible en [Bobchestrate Workshop](https://juseljuk.github.io/bobchestrate-workshop/). Si deseas explorar más ejercicios, temas avanzados o la versión extendida, ¡visita el enlace!

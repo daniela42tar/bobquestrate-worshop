@@ -118,7 +118,7 @@ Esta carpeta contendrá todos tus ficheros, agentes y herramientas del taller.
 
 > **Descargar IBM Bob IDE:** Si aún no has instalado IBM Bob IDE, descárgalo desde [bob.ibm.com/download](https://bob.ibm.com/download) e instálalo en tu ordenador. Asegúrate de usar la versión **Bob IDE**.
 
-<img src="images/image_download.png" alt="Getting started" width="700px">
+<img src="images/bob_download.png" alt="Getting started" width="700px">
 
 > **Instrucciones de instalación detalladas:** Para una guía de instalación completa, visita [bob.ibm.com/docs/ide/getting-started/install](https://bob.ibm.com/docs/ide/getting-started/install)
 
