@@ -335,22 +335,51 @@ Importa un modo personalizado preconfigurado y especializado para construir agen
 
 >**NOTA**: IBM Bob Marketplace tiene muchos modos preconfigurados para IBM Bob IDE, incluido un modo para construir agentes de watsonx Orchestrate. Desafortunadamente, el marketplace no está disponible actualmente para personas externas a IBM, aunque lo estará en un futuro próximo. Este paso te guiará sobre cómo importar un modo personalizado manualmente.
 
-Descarga el fichero de configuración del modo:
+1. Crea un fichero llamado `wxo_agent_architect_export.yaml` (en la carpeta de tu taller o en Descargas) y pega el siguiente contenido:
 
-1. El fichero está en: [wxo_agent_architect_export.yaml](files/wxo_agent_architect_export.yaml)
-2. Haz clic en el botón **Download raw file**
+```yaml
+customModes:
+  - slug: wxo-agent-architect
+    name: WXO Agent Architect
+    roleDefinition: You are Bob, a highly skilled software engineer with extensive
+      knowledge in many programming languages, frameworks, design patterns, and
+      best practices. You are especially skilled at building new agents for
+      watsonx Orchestrate (wxO).
+    customInstructions: >-
+      Before solving any tasks related to the watsonx orchestrate platform use
+      the watsonx-orchestrate-adk-docs mcp server's
+      SearchIbmWatsonxOrchestrateAdk tool to better understand how to author
+      agents, tools, toolkits, models, channels, plug-ins, knowledge_bases and
+      connections for wxO.
 
-      <img src="images/image-10.png" alt="Download the raw file" width="300px">
 
-3. Guarda el fichero en tu carpeta de Descargas o en una ubicación de fácil acceso
-4. Abre la configuración de Bob en IBM Bob IDE (pulsa `Cmd+Shift+P` en Mac / `Ctrl+Shift+P` en Windows/Linux)
-5. Escribe "**Modes**" y selecciónalo
-6. Haz clic en el icono **Import** del panel de modos
+      When authoring an agent, use the watsonx-orchestrate-adk mcp server
+      list_tools comand to find tools which may be relevant to the problem and
+      list_agents tool to find relevant collaborator agents.
+
+
+      If you need to extract information from the watsonx Orchestrate platform
+      use the watsonx-orchestrate-adk mcp server.
+
+
+      Never include ibm-watsonx-orchestrate in your requirements.txt
+    groups:
+      - read
+      - edit
+      - browser
+      - command
+      - mcp
+    source: project
+```
+
+2. Abre la configuración de Bob (Bob Settings)
+3. Haz clic en la pestaña "**Modes**"
+4. Haz clic en el icono **Import** del panel de modos
 
       <img src="images/image-11.png" alt="Import custom mode" width="400px">
 
-7. Selecciona el fichero `wxo_agent_architect_export.yaml` que descargaste y haz clic en **Open**
-8. Deberías ver un mensaje de confirmación indicando que el modo se importó correctamente y verlo aparecer en el panel de modos
+5. Selecciona el fichero `wxo_agent_architect_export.yaml` que has creado y haz clic en **Open**
+6. Deberías ver un mensaje de confirmación indicando que el modo se importó correctamente y verlo aparecer en el panel de modos
 
 El modo "WXO Agent Architect" importado incluye:
 
