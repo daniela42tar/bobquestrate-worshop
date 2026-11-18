@@ -6,7 +6,7 @@ hide:
 # Prompts útils de Bob per al desenvolupament amb watsonx Orchestrate
 
 <p align="center">
-  <img src="../../bob-prompts/bobchestrate_helpful_prompts.png" alt="Bobchestrate - Prompts útils" width="700">
+  <img src="../../../bob-prompts/bobchestrate_helpful_prompts.png" alt="Bobchestrate - Prompts útils" width="700">
 </p>
 
 Aquesta guia conté prompts útils per ajudar-te a treballar amb Bob durant el taller i més enllà.
