@@ -267,3 +267,62 @@
     font-size: 2.1rem;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Language switcher
+   -------------------------------------------------------------------------- */
+.bw-lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.bw-lang-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  padding: 4px 7px;
+  opacity: 0.6;
+  transition: opacity 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.bw-lang-btn:hover {
+  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.bw-lang-btn.bw-lang-active {
+  opacity: 1;
+  border-color: #7fa9ff;
+  color: #7fa9ff;
+  background: rgba(127, 169, 255, 0.1);
+}
+
+/* Light mode: the header stays indigo with white text, so use white tones */
+[data-md-color-scheme="default"] .bw-lang-btn {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #fff;
+  opacity: 0.85;
+}
+
+[data-md-color-scheme="default"] .bw-lang-btn:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 1;
+}
+
+[data-md-color-scheme="default"] .bw-lang-btn.bw-lang-active {
+  border-color: #fff;
+  color: #3f51b5;
+  background: #fff;
+  opacity: 1;
+}
+

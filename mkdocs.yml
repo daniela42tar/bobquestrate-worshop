@@ -14,7 +14,7 @@ repo_name: bobchestrate-workshop
 theme:
   name: material
   custom_dir: overrides
-  language: en
+  language: es
   palette:
     # Dark mode (default, first palette entry with no media query)
     - scheme: slate
@@ -70,6 +70,22 @@ nav:
   - Part 3 - Custom Tools: part3-custom-tools/README.md
   - Part 4 - Multi-Agent Orchestration: part4-multi-agent-orchestration/README.md
   - Bob Prompts: bob-prompts/helpful-prompts.md
+  # English translations
+  - en/Home: en/index.md
+  - en/Introduction: en/introduction.md
+  - en/Part 1 - Setup: en/part1-setup/README.md
+  - en/Part 2 - First Agent: en/part2-first-agent/README.md
+  - en/Part 3 - Custom Tools: en/part3-custom-tools/README.md
+  - en/Part 4 - Multi-Agent Orchestration: en/part4-multi-agent-orchestration/README.md
+  - en/Bob Prompts: en/bob-prompts/helpful-prompts.md
+  # Catalan translations
+  - ca/Home: ca/index.md
+  - ca/Introduction: ca/introduction.md
+  - ca/Part 1 - Setup: ca/part1-setup/README.md
+  - ca/Part 2 - First Agent: ca/part2-first-agent/README.md
+  - ca/Part 3 - Custom Tools: ca/part3-custom-tools/README.md
+  - ca/Part 4 - Multi-Agent Orchestration: ca/part4-multi-agent-orchestration/README.md
+  - ca/Bob Prompts: ca/bob-prompts/helpful-prompts.md
 
 # Plugins
 plugins:
@@ -79,6 +95,10 @@ plugins:
 # Custom CSS
 extra_css:
   - stylesheets/extra.css
+
+# Custom JS
+extra_javascript:
+  - javascripts/lang-switcher.js
 
 # Extra
 extra:
