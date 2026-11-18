@@ -220,17 +220,6 @@ pip --version  # Should show pip inside .venv
 
 > **NOTE:** Add `.venv` to your `.gitignore` — never commit the virtual environment folder to the repository.
 
-#### Alternative tools worth knowing
-
-| Tool | When to use it |
-|---|---|
-| venv (built-in) | Default option for most projects |
-| conda / miniconda | Data science / scientific computing (also manages Python versions) |
-| pyenv-win | You need to manage multiple Python versions on the same machine |
-| uv | Faster modern alternative; drop-in replacement for pip+venv |
-| pipenv | Combined dependency + venv management (heavier, less popular now) |
-| poetry | Full dependency/packaging management for library authors |
-
 ## Step 7: Install the watsonx Orchestrate ADK VS Code extension
 
 #### ❗️ IMPORTANT ❗️ ####
@@ -274,7 +263,7 @@ Now that you have the watsonx Orchestrate ADK extension installed, you will see 
 
 Click the red cross to install the ADK. This will open a couple of commands in the search/command bar. **Select the one that installs the ADK**.
 
-<img src="../../part1-setup/images/image-8.png" alt="IBM Bob IDE Command Palette showing Install ADK command" width="500px">
+<img src="../../part1-setup/images/image-8-new.png" alt="IBM Bob IDE Command Palette showing Install ADK command" width="500px">
 
 Wait for the installation to complete. After a moment, you should see a notification and a green check mark in the Status Bar with the latest ADK version number.
 
@@ -326,7 +315,7 @@ To confirm that the MCP servers are installed and running:
 
 Alternatively, you can check the MCP server configuration:
 1. Open the Command Palette (`Cmd+Shift+P` / `Ctrl+Shift+P`)
-2. Type "MCP Servers" and select it
+2. Type "Check WXO MCP Server status" and select it
 3. Verify that the watsonx Orchestrate MCP servers appear in the configuration and that both are marked with a green dot
 
    <img src="../../part1-setup/images/image-5.png" alt="IBM Bob IDE File menu showing Open Folder option" width="650px">
@@ -354,7 +343,7 @@ Download the mode configuration file:
       <img src="../../part1-setup/images/image-10.png" alt="Download the raw file" width="300px">
 
 3. Save the file in your Downloads folder or in an easily accessible location
-4. Open the Command Palette in IBM Bob IDE (press `Cmd+Shift+P` on Mac / `Ctrl+Shift+P` on Windows/Linux)
+4. Open the Bob Settings in IBM Bob IDE (press `Cmd+Shift+P` on Mac / `Ctrl+Shift+P` on Windows/Linux)
 5. Type "**Modes**" and select it
 6. Click the **Import** icon in the modes panel
 

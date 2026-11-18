@@ -220,17 +220,6 @@ pip --version  # Should show pip inside .venv
 
 > **NOTA:** Afegeix `.venv` al teu `.gitignore` — mai confirmis la carpeta de l'entorn virtual al repositori.
 
-#### Eines alternatives que convé conèixer
-
-| Eina | Quan fer-la servir |
-|---|---|
-| venv (integrat) | Opció per defecte per a la majoria de projectes |
-| conda / miniconda | Ciència de dades / computació científica (també gestiona versions de Python) |
-| pyenv-win | Necessites gestionar diverses versions de Python a la mateixa màquina |
-| uv | Alternativa moderna més ràpida; reemplaçament directe de pip+venv |
-| pipenv | Gestió combinada de dependències + venv (més pesat, menys popular ara) |
-| poetry | Gestió completa de dependències/empaquetatge per a autors de llibreries |
-
 ## Pas 7: Instal·lar l'extensió VS Code del watsonx Orchestrate ADK
 
 #### ❗️ IMPORTANT ❗️ ####
@@ -274,7 +263,7 @@ Ara que tens instal·lada l'extensió watsonx Orchestrate ADK, veuràs la inform
 
 Fes clic a la creu vermella per instal·lar l'ADK. Això obrirà un parell d'ordres a la barra de cerca/ordres. **Selecciona la que instal·la l'ADK**.
 
-<img src="../../part1-setup/images/image-8.png" alt="IBM Bob IDE Command Palette showing Install ADK command" width="500px">
+<img src="../../part1-setup/images/image-8-new.png" alt="IBM Bob IDE Command Palette showing Install ADK command" width="500px">
 
 Espera que es completi la instal·lació. Al cap d'un moment, hauries de veure una notificació i una marca de verificació verda a la Barra d'estat amb el número de versió més recent de l'ADK.
 
@@ -326,7 +315,7 @@ Per confirmar que els servidors MCP estan instal·lats i funcionant:
 
 Com a alternativa, pots comprovar la configuració dels servidors MCP:
 1. Obre la Paleta d'ordres (`Cmd+Shift+P` / `Ctrl+Shift+P`)
-2. Escriu "MCP Servers" i selecciona'l
+2. Escriu "Check WXO MCP Server status" i selecciona'l
 3. Verifica que els servidors MCP de watsonx Orchestrate apareixen a la configuració i que tots dos estan marcats amb un punt verd
 
    <img src="../../part1-setup/images/image-5.png" alt="IBM Bob IDE File menu showing Open Folder option" width="650px">
@@ -354,7 +343,7 @@ Descarrega el fitxer de configuració del mode:
       <img src="../../part1-setup/images/image-10.png" alt="Download the raw file" width="300px">
 
 3. Desa el fitxer a la teva carpeta de Descàrregues o en una ubicació de fàcil accés
-4. Obre la Paleta d'ordres a IBM Bob IDE (prem `Cmd+Shift+P` a Mac / `Ctrl+Shift+P` a Windows/Linux)
+4. Obre la configuració de Bob a IBM Bob IDE (prem `Cmd+Shift+P` a Mac / `Ctrl+Shift+P` a Windows/Linux)
 5. Escriu "**Modes**" i selecciona'l
 6. Fes clic a la icona **Import** del panell de modes
 

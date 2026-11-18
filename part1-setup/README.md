@@ -220,17 +220,6 @@ pip --version  # Should show pip inside .venv
 
 > **NOTA:** Añade `.venv` a tu `.gitignore` — nunca confirmes la carpeta del entorno virtual en el repositorio.
 
-#### Herramientas alternativas que conviene conocer
-
-| Herramienta | Cuándo usarla |
-|---|---|
-| venv (integrado) | Opción predeterminada para la mayoría de proyectos |
-| conda / miniconda | Ciencia de datos / computación científica (también gestiona versiones de Python) |
-| pyenv-win | Necesitas gestionar múltiples versiones de Python en la misma máquina |
-| uv | Alternativa moderna más rápida; reemplazo directo de pip+venv |
-| pipenv | Gestión combinada de dependencias + venv (más pesado, menos popular ahora) |
-| poetry | Gestión completa de dependencias/empaquetado para autores de librerías |
-
 ## Paso 7: Instalar la extensión VS Code del watsonx Orchestrate ADK
 
 #### ❗️ IMPORTANTE ❗️ ####
@@ -274,7 +263,7 @@ Ahora que tienes instalada la extensión watsonx Orchestrate ADK, verás la info
 
 Haz clic en la cruz roja para instalar el ADK. Esto abrirá un par de comandos en la barra de búsqueda/comandos. **Selecciona el que instala el ADK**.
 
-<img src="images/image-8.png" alt="IBM Bob IDE Command Palette showing Install ADK command" width="500px">
+<img src="images/image-8-new.png" alt="IBM Bob IDE Command Palette showing Install ADK command" width="500px">
 
 Espera a que se complete la instalación. Después de un momento, deberías ver una notificación y una marca de verificación verde en la Barra de Estado con el número de versión más reciente del ADK.
 
@@ -326,7 +315,7 @@ Para confirmar que los servidores MCP están instalados y funcionando:
 
 Como alternativa, puedes comprobar la configuración de los servidores MCP:
 1. Abre la Paleta de Comandos (`Cmd+Shift+P` / `Ctrl+Shift+P`)
-2. Escribe "MCP Servers" y selecciónalo
+2. Escribe "Check WXO MCP Server status" y selecciónalo
 3. Verifica que los servidores MCP de watsonx Orchestrate aparecen en la configuración y que ambos están marcados con un punto verde
 
    <img src="images/image-5.png" alt="IBM Bob IDE File menu showing Open Folder option" width="650px">
@@ -354,7 +343,7 @@ Descarga el fichero de configuración del modo:
       <img src="images/image-10.png" alt="Download the raw file" width="300px">
 
 3. Guarda el fichero en tu carpeta de Descargas o en una ubicación de fácil acceso
-4. Abre la Paleta de Comandos en IBM Bob IDE (pulsa `Cmd+Shift+P` en Mac / `Ctrl+Shift+P` en Windows/Linux)
+4. Abre la configuración de Bob en IBM Bob IDE (pulsa `Cmd+Shift+P` en Mac / `Ctrl+Shift+P` en Windows/Linux)
 5. Escribe "**Modes**" y selecciónalo
 6. Haz clic en el icono **Import** del panel de modos
 

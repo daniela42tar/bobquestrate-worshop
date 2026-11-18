@@ -13,8 +13,6 @@ Welcome! This workshop will guide you through building AI agents with IBM watson
 
 > ℹ️ This workshop is based on the more extensive [Bobchestrate Workshop](https://juseljuk.github.io/bobchestrate-workshop/). If you want to take the full extended version, click the link!
 
-> 📊 **Workshop facilitators:** Use the [Bobchestrate Workshop introduction presentation](../Bobchestrate%20Workshop.pptx) to introduce the workshop to participants before getting started.
-
 ## Workshop overview
 
 **Duration:** 105-120 minutes

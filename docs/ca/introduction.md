@@ -13,8 +13,6 @@ Us donem la benvinguda! Aquest taller et guiarà en la creació d'agents d'IA am
 
 > ℹ️ Aquest taller està basat en el taller més extens [Bobchestrate Workshop](https://juseljuk.github.io/bobchestrate-workshop/). Si vols fer la versió estesa completa, fes clic a l'enllaç!
 
-> 📊 **Facilitadors del taller:** Useu la [presentació d'introducció del Bobchestrate Workshop](../Bobchestrate%20Workshop.pptx) per presentar el taller als participants abans de començar.
-
 ## Resum del taller
 
 **Durada:** 105-120 minuts
