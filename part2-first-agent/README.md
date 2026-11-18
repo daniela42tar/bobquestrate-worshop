@@ -214,12 +214,12 @@ instructions: |
   Keep your responses brief and engaging.
 ```
 
-###🚨 _¡IMPORTANTE!_ 🚨##
+#### ❗️ IMPORTANTE ❗️ ####
 > Como aún no hemos proporcionado a Bob ninguna regla específica de desarrollo de agentes wxO (lo haremos en la siguiente Parte 3) — solo los servidores MCP para consultar la documentación actual — Bob puede cometer errores en el fichero YAML. Uno de ellos es el nombre del agente en el fichero YAML. WxO no admite guiones en el nombre del agente. Por tanto, si ves un guion en el nombre, elimínalo y sustitúyelo por un guion bajo — por ejemplo `hello-agent` se convierte en `hello_agent`.
 
 ## Paso 3: Importar tu agente
 
-### _¡IMPORTANTE!_ ##
+#### ❗️ IMPORTANTE ❗️ ####
 > Como los participantes del taller trabajan en el mismo entorno, necesitas importar el agente con un nombre único. Usa tus iniciales en el nombre del agente. Edita el nombre del agente en el fichero YAML antes de importarlo añadiendo tus iniciales al nombre. Por ejemplo, cambia `hello_agent` a `hello_agent_JKJ`.
 
 <img src="images/image.png" alt="Agent renaming" width="450px">

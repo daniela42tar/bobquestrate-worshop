@@ -1,13 +1,6 @@
 /* ==========================================================================
-   Bobchestrate Workshop - Home Page Cards & Custom Styling
+   Bobchestrate Workshop - Dark theme + Home page styling
    ========================================================================== */
-
-/* 1. Hide default H1 / Header on home page */
-article.md-content__inner:has(.home-cards-container) > h1:first-child,
-.md-typeset:has(.home-cards-container) > h1:first-child,
-.home-cards-container ~ h1 {
-  display: none !important;
-}
 
 /* Hide top tab navigation bar globally if present */
 .md-tabs {
@@ -20,189 +13,257 @@ article.md-content__inner:has(.home-cards-container) > h1:first-child,
   text-decoration: none;
 }
 
-/* 2. Container setup */
-.home-cards-container {
+/* --------------------------------------------------------------------------
+   Dark palette (default) - deep navy, Bob-like
+   -------------------------------------------------------------------------- */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0b0e14;
+  --md-default-bg-color--light: rgba(11, 14, 20, 0.54);
+  --md-default-bg-color--lighter: rgba(11, 14, 20, 0.26);
+  --md-default-bg-color--lightest: rgba(11, 14, 20, 0.07);
+  --md-default-fg-color: #e7edf6;
+  --md-default-fg-color--light: #94a3b8;
+  --md-default-fg-color--lighter: #3a465e;
+  --md-default-fg-color--lightest: #232d3f;
+  --md-typeset-color: #e7edf6;
+  --md-typeset-a-color: #7fa9ff;
+  --md-accent-fg-color: #7fa9ff;
+  --md-code-bg-color: #070a10;
+  --md-footer-bg-color: #0b0e14;
+  --md-footer-bg-color--dark: #070a10;
+}
+
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #0e131c;
+  border-bottom: 1px solid #232d3f;
+  box-shadow: none;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: #7fa9ff;
+}
+
+/* --------------------------------------------------------------------------
+   Home page
+   -------------------------------------------------------------------------- */
+.bw-home {
+  --bw-bg: #0b0e14;
+  --bw-panel: #141b27;
+  --bw-panel2: #1a2333;
+  --bw-line: #232d3f;
+  --bw-ink: #e7edf6;
+  --bw-muted: #94a3b8;
+  --bw-faint: #6b7688;
+  --bw-blue: #4d8dff;
+  --bw-blue2: #7fa9ff;
+  --bw-grad: linear-gradient(135deg, #3b7bff, #9a5cff);
   max-width: 1040px;
-  margin: 2rem auto 4rem auto;
-  padding: 0 0.5rem;
+  margin: 0 auto 4rem auto;
 }
 
-/* 3. Cards Grid Layout */
-.md-typeset .grid.cards.home-cards > ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  gap: 1.75rem;
-  margin: 1.5rem 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* 4. Individual Card Style (Noticeable & Elevated) */
-.md-typeset .grid.cards.home-cards > ul > li {
+/* Hero */
+.bw-hero {
   position: relative;
+  padding: 2.5rem 0.5rem 0.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bw-hero::before {
+  content: "";
+  position: absolute;
+  top: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 680px;
+  height: 360px;
+  background: radial-gradient(closest-side, rgba(90, 110, 255, 0.22), transparent 70%);
+  pointer-events: none;
+}
+
+.bw-kicker {
+  position: relative;
+  color: var(--bw-blue2);
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.md-typeset .bw-hero h1 {
+  position: relative;
+  margin: 0.75rem 0 0.5rem;
+  font-size: 2.9rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  background: linear-gradient(180deg, #ffffff, #c7d4ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bw-lead {
+  position: relative;
+  margin: 0 auto 1.5rem;
+  max-width: 560px;
+  color: var(--bw-muted);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.bw-heroimg {
+  position: relative;
+  display: block;
+  width: 50%;
+  max-width: 120px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 18px;
+  border: 1px solid var(--bw-line);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
+}
+
+/* Group labels */
+.bw-group {
+  margin: 2.5rem 0 0.9rem;
+  font-size: 0.78rem;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--bw-faint);
+  font-weight: 800;
+}
+
+/* Card grid */
+.bw-cards {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.bw-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px;
+  background: var(--bw-panel);
+  border: 1px solid var(--bw-line);
+  border-radius: 16px;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
+  color: var(--bw-ink);
+  text-decoration: none;
+  transition: transform 0.16s ease, box-shadow 0.16s ease,
+              border-color 0.16s ease, background 0.16s ease;
+}
+
+.bw-card:hover {
+  transform: translateY(-2px);
+  border-color: #4a5c86;
+  background: var(--bw-panel2);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.55);
+  color: var(--bw-ink);
+}
+
+.bw-chip {
+  flex: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #fff;
+  background: var(--bw-grad);
+}
+
+.bw-star .bw-chip {
+  background: linear-gradient(135deg, #c8901f, #f0b429);
+}
+
+.bw-body {
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 1.75rem;
-  border-radius: 16px;
-  border: 2px solid var(--md-default-fg-color--lighter);
-  background: var(--md-default-bg-color);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.28s ease,
-              background-color 0.28s ease;
-  margin: 0 !important;
 }
 
-/* Light mode card surface */
-[data-md-color-scheme="default"] .md-typeset .grid.cards.home-cards > ul > li {
-  background: #ffffff;
-  border-color: #e2e8f0;
+.bw-kick {
+  color: var(--bw-blue2);
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.bw-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #f1f5fb;
+  line-height: 1.25;
+}
+
+.bw-sub {
+  color: var(--bw-muted);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin-top: 3px;
+}
+
+.bw-chev {
+  flex: none;
+  color: #4a597a;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-right: 4px;
+  transition: color 0.16s ease, transform 0.16s ease;
+}
+
+.bw-card:hover .bw-chev {
+  color: var(--bw-blue2);
+  transform: translateX(3px);
+}
+
+/* Light mode fallback (user toggles the palette) */
+[data-md-color-scheme="default"] .bw-home {
+  --bw-panel: #ffffff;
+  --bw-panel2: #f5f7ff;
+  --bw-line: #e2e8f0;
+  --bw-ink: #1f2937;
+  --bw-muted: #475569;
+  --bw-faint: #64748b;
+  --bw-blue2: #3b5bdb;
+}
+
+[data-md-color-scheme="default"] .bw-card {
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
 }
 
-/* Dark mode card surface */
-[data-md-color-scheme="slate"] .md-typeset .grid.cards.home-cards > ul > li {
-  background: #1e222d;
-  border-color: #2d3444;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+[data-md-color-scheme="default"] .bw-card:hover {
+  border-color: #3f51b5;
+  box-shadow: 0 16px 36px rgba(63, 81, 181, 0.18);
 }
 
-/* Card Hover Effects */
-.md-typeset .grid.cards.home-cards > ul > li:hover {
-  transform: translateY(-6px);
-  border-color: var(--md-primary-fg-color);
-  box-shadow: 0 16px 36px rgba(63, 81, 181, 0.18),
-              0 4px 10px rgba(0, 0, 0, 0.06);
+[data-md-color-scheme="default"] .bw-title {
+  color: #111827;
 }
 
-[data-md-color-scheme="slate"] .md-typeset .grid.cards.home-cards > ul > li:hover {
-  border-color: var(--md-accent-fg-color);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5),
-              0 0 24px rgba(124, 92, 216, 0.25);
+[data-md-color-scheme="default"] .md-typeset .bw-hero h1 {
+  background: linear-gradient(180deg, #1e1b4b, #3f51b5);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
-/* 5. Card Title & Icon */
-.md-typeset .grid.cards.home-cards h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.4;
-  color: var(--md-default-fg-color);
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+[data-md-color-scheme="default"] .bw-heroimg {
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
 }
 
-.md-typeset .grid.cards.home-cards h3 a {
-  color: var(--md-default-fg-color);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.md-typeset .grid.cards.home-cards h3 a:hover {
-  color: var(--md-primary-fg-color);
-}
-
-/* Remove permalink anchor symbol inside card headers */
-.md-typeset .grid.cards.home-cards h3 .headerlink {
-  display: none;
-}
-
-/* 6. Card Divider */
-.md-typeset .grid.cards.home-cards hr {
-  margin: 0.75rem 0 1rem 0;
-  border: 0;
-  height: 1.5px;
-  background: var(--md-default-fg-color--lightest);
-  opacity: 0.9;
-}
-
-/* 7. Card Body Description */
-.md-typeset .grid.cards.home-cards p {
-  margin: 0 0 1.25rem 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--md-default-fg-color--light);
-  flex-grow: 1;
-}
-
-/* 8. Card Footer Row (Duration + Action) */
-.md-typeset .grid.cards.home-cards p:last-child {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: auto 0 0 0;
-  padding-top: 1rem;
-  border-top: 1px solid var(--md-default-fg-color--lightest);
-  gap: 0.75rem;
-  flex-grow: 0;
-}
-
-/* Duration / Reference Badge */
-.md-typeset .grid.cards.home-cards .card-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  padding: 0.35rem 0.8rem;
-  border-radius: 20px;
-  background: rgba(63, 81, 181, 0.08);
-  color: var(--md-primary-fg-color);
-  white-space: nowrap;
-}
-
-[data-md-color-scheme="slate"] .md-typeset .grid.cards.home-cards .card-badge {
-  background: rgba(124, 92, 216, 0.18);
-  color: #c7d2fe;
-}
-
-/* Call to Action Button */
-.md-typeset .grid.cards.home-cards .card-action a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #ffffff !important;
-  text-decoration: none;
-  padding: 0.45rem 1rem;
-  border-radius: 8px;
-  background: var(--md-primary-fg-color);
-  box-shadow: 0 2px 6px rgba(63, 81, 181, 0.25);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.md-typeset .grid.cards.home-cards .card-action a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(63, 81, 181, 0.4);
-  filter: brightness(1.1);
-}
-
-[data-md-color-scheme="slate"] .md-typeset .grid.cards.home-cards .card-action a {
-  background: var(--md-primary-fg-color);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-/* Featured / Advanced Tag */
-.md-typeset .grid.cards.home-cards .badge-featured {
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 0.2rem 0.6rem;
-  border-radius: 12px;
-  background: #fef3c7;
-  color: #92400e;
-  border: 1px solid #fde68a;
-  display: inline-flex;
-  align-items: center;
-}
-
-[data-md-color-scheme="slate"] .md-typeset .grid.cards.home-cards .badge-featured {
-  background: rgba(245, 158, 11, 0.2);
-  color: #fcd34d;
-  border-color: rgba(245, 158, 11, 0.4);
+@media (max-width: 680px) {
+  .md-typeset .bw-hero h1 {
+    font-size: 2.1rem;
+  }
 }

@@ -34,7 +34,9 @@ Abre un terminal y ejecuta:
 ```bash
 python3 --version
 ```
-***IMPORTANTE: Si ves una versión distinta de 3.11.x, 3.12.x o 3.13.x, debes instalar una de las versiones compatibles (3.11.x - 3.13.x) en tu ordenador.***
+
+#### ❗️ IMPORTANTE ❗️ ####
+> Si ves una versión distinta de 3.11.x, 3.12.x o 3.13.x, debes instalar una de las versiones compatibles (3.11.x - 3.13.x) en tu ordenador.
 
 ### Windows 11
 
@@ -44,7 +46,8 @@ python --version
 ```
 > **Nota:** En Windows usa `python` en lugar de `python3`. Si al escribir `python` se abre la Microsoft Store en vez de mostrar una versión, desactiva el stub desde **Configuración → Aplicaciones → Configuración avanzada de aplicaciones → Alias de ejecución de aplicaciones** y desactiva las entradas de Python.
 
-***IMPORTANTE: Si ves una versión distinta de 3.11.x, 3.12.x o 3.13.x, debes instalar una de las versiones compatibles (3.11.x - 3.13.x) en tu ordenador.***
+#### ❗️ IMPORTANTE ❗️ ####
+> Si ves una versión distinta de 3.11.x, 3.12.x o 3.13.x, debes instalar una de las versiones compatibles (3.11.x - 3.13.x) en tu ordenador.
 
 Durante la instalación, asegúrate de marcar:
 - ✅ **Add Python to PATH**
@@ -86,7 +89,8 @@ pip install uv
 
 ---
 
-***IMPORTANTE: Deberías ver un número de versión. El número concreto no importa, solo necesitas tener uv instalado.***
+#### ❗️ IMPORTANTE ❗️ ####
+> Deberías ver un número de versión. El número concreto no importa, solo necesitas tener uv instalado.
 
 Descarga uv: ([https://pypi.org/project/uv/](https://pypi.org/project/uv/))
 
@@ -122,7 +126,7 @@ Esta carpeta contendrá todos tus ficheros, agentes y herramientas del taller.
 
 > **Instrucciones de instalación detalladas:** Para una guía de instalación completa, visita [bob.ibm.com/docs/ide/getting-started/install](https://bob.ibm.com/docs/ide/getting-started/install)
 
-### ❗️ IMPORTANTE ❗️ ###
+#### ❗️ IMPORTANTE ❗️ ####
 > Debes iniciar sesión para usar las capacidades de IA de Bob durante el taller. Si tienes algún problema para iniciar sesión, contacta con tu instructor.
 
 ## Paso 5: Abrir la carpeta en IBM Bob IDE
@@ -142,7 +146,7 @@ Se abrirá el espacio de trabajo vacío.
 
 ## Paso 6: Crear el entorno virtual de Python
 
-### ❗️ IMPORTANTE ❗️ ###
+#### ❗️ IMPORTANTE ❗️ ####
 > El entorno virtual de Python es fundamental para el taller. Asegúrate de completar este paso antes de proceder a instalar la extensión VS Code de wxO y el propio wxO ADK.
 
 ### macOS / Linux
@@ -229,7 +233,7 @@ pip --version  # Should show pip inside .venv
 
 ## Paso 7: Instalar la extensión VS Code del watsonx Orchestrate ADK
 
-### ❗️ IMPORTANTE ❗️ ###
+#### ❗️ IMPORTANTE ❗️ ####
 > **Si ya tienes la extensión instalada**, ¡recarga la ventana de Bob IDE! Esto garantiza que la extensión detecte correctamente tu nuevo entorno virtual. Abre la Paleta de Comandos en IBM Bob IDE (pulsa `Cmd+Shift+P` en Mac / `Ctrl+Shift+P` en Windows/Linux), empieza a escribir "**Developer: Reload Window**" y selecciónalo. La ventana de Bob IDE se recargará y la extensión se reiniciará. Luego puedes pasar directamente al Paso 8. ¡**NO** uses la extensión para inicializar el espacio de trabajo!
 
 Instala la extensión de watsonx Orchestrate para IBM Bob IDE:
@@ -257,7 +261,7 @@ La extensión VS Code IBM watsonx Orchestrate ADK proporciona:
 - Control del servidor Developer Edition: Inicia/detiene el servidor watsonx Orchestrate Developer Edition directamente desde la interfaz
 - Asistente de IA Orchestrate Builder: Asistente de IA interactivo que te guía en la construcción y perfeccionamiento de agentes mediante prompts
 
-### ❗️ IMPORTANTE ❗️ ###
+#### ❗️ IMPORTANTE ❗️ ####
 > **NO** abras la extensión en sí misma, solo necesitas tenerla instalada. ¡Usar la extensión para inicializar el espacio de trabajo puede causar problemas!
 
 ## Paso 8: Instalar el watsonx Orchestrate ADK
@@ -437,7 +441,7 @@ Copia la **Service instance URL** de la información de detalles de la API. Esta
    
    Después de ejecutar el comando, deberías ver el mensaje: `[INFO] Environment '<your-env-name>' is now active`. Esto significa que tu entorno está activo y listo para usar con el ADK. Puedes ignorar el aviso sobre el Auth Type.
 
-### ❗️ IMPORTANTE ❗️ ###
+#### ❗️ IMPORTANTE ❗️ ####
 > La autenticación contra un entorno remoto caduca cada dos horas. Tras la caducidad, debes volver a ejecutar orchestrate env activate. Por tanto, mantén tu clave API disponible y lista para usar.
 
 #### Opción B: Usando Bob para ayudarte 😃
@@ -504,7 +508,7 @@ Ahora que tienes los servidores MCP de watsonx Orchestrate y el modo WXO Agent A
 
       Si está configurado correctamente, este comando listará los agentes en tu entorno (o mostrará una lista vacía si aún no has creado ningún agente).
 
-### ❗️ IMPORTANTE ❗️ ###
+#### ❗️ IMPORTANTE ❗️ ####
 > La autenticación contra un entorno remoto caduca cada dos horas. Tras la caducidad, debes volver a ejecutar orchestrate env activate. Por tanto, mantén tu clave API disponible y lista para usar.
 
 ## Usar Bob durante el taller

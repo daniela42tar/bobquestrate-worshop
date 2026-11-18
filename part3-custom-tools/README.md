@@ -231,9 +231,10 @@ def process_refund(order_id: str, reason: str, amount: float) -> dict:
 
 ## Paso 3: Importar tus herramientas
 
-### IMPORTANTE: Como los participantes del taller usarán el mismo entorno de watsonx Orchestrate, RENOMBRA los _nombres de tus herramientas_ (nombres de las funciones) dentro de los archivos Python añadiendo tus iniciales como sufijo. ¡RECUERDA guardar los cambios! ###
-
->Por ejemplo, `def check_order_status` pasa a ser `def check_order_status_JKJ`. Asegúrate de usar el mismo sufijo en todas tus herramientas.
+#### ❗️ IMPORTANTE ❗️ ####
+> Como los participantes del taller usarán el mismo entorno de watsonx Orchestrate, RENOMBRA los _nombres de tus herramientas_ (nombres de las funciones) dentro de los archivos Python añadiendo tus iniciales como sufijo. ¡RECUERDA guardar los cambios!
+>
+> Por ejemplo, `def check_order_status` pasa a ser `def check_order_status_JKJ`. Asegúrate de usar el mismo sufijo en todas tus herramientas.
 
 <img src="images/image-1.png" alt="" width="450px">
 
@@ -278,7 +279,8 @@ Ahora crea un agente que use estas herramientas. Puedes usar la definición de a
 
 También puedes crear tu propia definición de agente si lo prefieres.
 
-## IMPORTANTE: ¡Asegúrate de cambiar los nombres de las herramientas en la definición del agente para que coincidan con los nombres de las herramientas que importaste! ¡Y añade también tus iniciales como sufijo al nombre del agente! ###
+#### ❗️ IMPORTANTE ❗️ ####
+> ¡Asegúrate de cambiar los nombres de las herramientas en la definición del agente para que coincidan con los nombres de las herramientas que importaste! ¡Y añade también tus iniciales como sufijo al nombre del agente!
 
 ```yaml
 # customer_support_agent.yaml
