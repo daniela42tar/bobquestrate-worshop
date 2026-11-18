@@ -29,10 +29,17 @@
    * Works with or without a trailing slash, with or without a base URL.
    */
   function getSiteBase() {
-    // The MkDocs site_url / base href is set on <base> in the page <head>.
-    var base = document.querySelector("base");
-    if (base && base.href) {
-      return base.href.replace(/\/$/, "");
+    // MkDocs Material exposes the relative path to the site root as
+    // `base` in <script id="__config"> (e.g. ".." or "../.."), which
+    // also works when deployed under a sub-path (GitHub Pages project sites).
+    var cfg = document.getElementById("__config");
+    if (cfg) {
+      try {
+        var base = JSON.parse(cfg.textContent).base;
+        if (typeof base === "string") {
+          return new URL(base, window.location.href).href.replace(/\/$/, "");
+        }
+      } catch (e) {}
     }
     return window.location.origin;
   }
