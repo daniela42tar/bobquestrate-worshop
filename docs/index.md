@@ -11,7 +11,7 @@ hide:
 <h1>Bobchestrate Workshop</h1>
 <p class="bw-lead">Taller práctico para crear agentes de IA con IBM watsonx Orchestrate, con IBM Bob como tu compañero de programación.</p>
 <!-- <img class="bw-heroimg" src="Bobchestrate_Workshop_logo_new.png" alt="Logotipo de Bobchestrate Workshop"> -->
-<button class="bw-firma" id="bw-firma" type="button" title="Autores" aria-label="Autores"><span class="bw-firma-imgs"><img src="part1-setup/images/foto-ofv.png" alt=""><img src="part1-setup/images/foto-dtt.jpeg" alt=""></span><span>por <b>Oscar Fernandez</b> &amp; <b>Daniela Tarzia</b></span></button>
+<button class="bw-firma" id="bw-firma" type="button" title="Autores" aria-label="Autores"><span class="bw-firma-imgs"><img src="part1-setup/images/foto-dtt.jpeg" alt=""><img src="part1-setup/images/foto-ofv.png" alt=""></span><span>por <b>Daniela Tarzia</b> &amp; <b>Oscar Fernandez</b></span></button>
 </section>
 <dialog class="bw-acerca" id="bw-acerca" aria-labelledby="bw-acerca-titulo">
 <div class="bw-acerca-cab">
@@ -20,12 +20,12 @@ hide:
 </div>
 <div class="bw-acerca-cuerpo">
 <div class="bw-autor">
-<img src="part1-setup/images/foto-ofv.png" alt="Oscar Fernandez Valle">
-<div><div class="bw-autor-nombre">Oscar Fernandez Valle</div><div class="bw-autor-rol">AI & BA Customer Success Engineer</div><div class="bw-autor-email"><a href="mailto:oscar_f_v@es.ibm.com">oscar_f_v@es.ibm.com</a></div></div>
+<img src="part1-setup/images/foto-dtt.jpeg" alt="Daniela Tarzia Tartara">
+<div><div class="bw-autor-nombre">Daniela Tarzia Tártara</div><div class="bw-autor-rol">Client Value Engineer</div><div class="bw-autor-email"><a href="mailto:daniela.tarzia@ibm.com">daniela.tarzia@ibm.com</a></div></div>
 </div>
 <div class="bw-autor">
-<img src="part1-setup/images/foto-dtt.jpeg" alt="Daniela Tarzia Tartara">
-<div><div class="bw-autor-nombre">Daniela Tarzia Tartara</div><div class="bw-autor-rol">Client Value Engineer</div><div class="bw-autor-email"><a href="mailto:daniela.tarzia@ibm.com">daniela.tarzia@ibm.com</a></div></div>
+<img src="part1-setup/images/foto-ofv.png" alt="Oscar Fernandez Valle">
+<div><div class="bw-autor-nombre">Oscar Fernandez Valle</div><div class="bw-autor-rol">AI & BA Customer Success Engineer</div><div class="bw-autor-email"><a href="mailto:oscar_f_v@es.ibm.com">oscar_f_v@es.ibm.com</a></div></div>
 </div>
 </div>
 </dialog>
