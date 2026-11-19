@@ -99,6 +99,7 @@ extra_css:
 # Custom JS
 extra_javascript:
   - javascripts/lang-switcher.js
+  - javascripts/authors.js
 
 # Extra
 extra:

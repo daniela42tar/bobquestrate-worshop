@@ -11,7 +11,24 @@ hide:
 <h1>Bobchestrate Workshop</h1>
 <p class="bw-lead">A hands-on workshop to build AI agents with IBM watsonx Orchestrate, with IBM Bob as your coding companion.</p>
 <!-- <img class="bw-heroimg" src="../Bobchestrate_Workshop_logo_new.png" alt="Logotipo de Bobchestrate Workshop"> -->
+<button class="bw-firma" id="bw-firma" type="button" title="Authors" aria-label="Authors"><span class="bw-firma-imgs"><img src="../part1-setup/images/foto-ofv.png" alt=""><img src="../part1-setup/images/foto-dtt.jpeg" alt=""></span><span>by <b>Oscar Fernandez</b> &amp; <b>Daniela Tarzia</b></span></button>
 </section>
+<dialog class="bw-acerca" id="bw-acerca" aria-labelledby="bw-acerca-titulo">
+<div class="bw-acerca-cab">
+<div><h2 id="bw-acerca-titulo">Bobchestrate Workshop</h2><p>Authors, IBM Spain</p></div>
+<button class="bw-acerca-cerrar" type="button" id="bw-acerca-cerrar">Close</button>
+</div>
+<div class="bw-acerca-cuerpo">
+<div class="bw-autor">
+<img src="../part1-setup/images/foto-ofv.png" alt="Oscar Fernandez Valle">
+<div><div class="bw-autor-nombre">Oscar Fernandez Valle</div><div class="bw-autor-rol">AI & BA Customer Success Engineer</div><div class="bw-autor-email"><a href="mailto:oscar_f_v@es.ibm.com">oscar_f_v@es.ibm.com</a></div></div>
+</div>
+<div class="bw-autor">
+<img src="../part1-setup/images/foto-dtt.jpeg" alt="Daniela Tarzia Tartara">
+<div><div class="bw-autor-nombre">Daniela Tarzia Tartara</div><div class="bw-autor-rol">Client Value Engineer</div><div class="bw-autor-email"><a href="mailto:daniela.tarzia@ibm.com">daniela.tarzia@ibm.com</a></div></div>
+</div>
+</div>
+</dialog>
 <div class="bw-group">Start here</div>
 <div class="bw-cards">
 <a class="bw-card" href="../introduction/">
