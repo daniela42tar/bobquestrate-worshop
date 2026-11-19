@@ -267,6 +267,11 @@ Verifica que se importaron:
 orchestrate tools list | grep -E "<your_initials>", for example: orchestrate tools list | grep -E "JKJ"
 ```
 
+En Windows, usa este comando:
+```
+orchestrate tools list | findstr "<your_initials>"
+```
+
 ¡Deberías ver tus herramientas en la lista!
 
 ## Paso 4: Crear un agente de atención al cliente con herramientas

@@ -267,6 +267,11 @@ Verify that they were imported:
 orchestrate tools list | grep -E "<your_initials>", for example: orchestrate tools list | grep -E "JKJ"
 ```
 
+On Windows, use this command instead:
+```
+orchestrate tools list | findstr "<your_initials>"
+```
+
 You should see your tools in the list!
 
 ## Step 4: Create a customer support agent with tools

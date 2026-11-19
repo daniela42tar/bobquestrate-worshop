@@ -267,6 +267,11 @@ Verifica que s'han importat:
 orchestrate tools list | grep -E "<your_initials>", for example: orchestrate tools list | grep -E "JKJ"
 ```
 
+A Windows, fes servir aquesta ordre:
+```
+orchestrate tools list | findstr "<your_initials>"
+```
+
 Hauries de veure les teves eines a la llista!
 
 ## Pas 4: Crear un agent d'atenció al client amb eines

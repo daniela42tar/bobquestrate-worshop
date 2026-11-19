@@ -215,7 +215,7 @@ instructions: |
 ```
 
 #### ❗️ IMPORTANTE ❗️ ####
-> Como aún no hemos proporcionado a Bob ninguna regla específica de desarrollo de agentes wxO (lo haremos en la siguiente Parte 3) — solo los servidores MCP para consultar la documentación actual — Bob puede cometer errores en el fichero YAML. Uno de ellos es el nombre del agente en el fichero YAML. WxO no admite guiones en el nombre del agente. Por tanto, si ves un guion en el nombre, elimínalo y sustitúyelo por un guion bajo — por ejemplo `hello-agent` se convierte en `hello_agent`.
+> Como aún no hemos proporcionado a Bob ninguna regla específica de desarrollo de agentes wxO (lo haremos en la siguiente Parte 3) — solo dispone de los servidores MCP para consultar la documentación actual — Bob puede cometer errores en el fichero YAML. Uno de ellos es el nombre del agente en el fichero YAML. WxO no admite guiones en el nombre del agente. Por tanto, si ves un guion en el nombre, elimínalo y sustitúyelo por un guion bajo — por ejemplo `hello-agent` se convierte en `hello_agent`.
 
 ## Paso 3: Importar tu agente
 

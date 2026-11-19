@@ -215,7 +215,7 @@ instructions: |
 ```
 
 #### ❗️ IMPORTANT ❗️ ####
-> Since we haven't yet given Bob any specific wxO agent development rules (we'll do that in the next Part 3) — only the MCP servers to query the current documentation — Bob may make mistakes in the YAML file. One of them is the agent name in the YAML file. WxO does not support hyphens in the agent name. So, if you see a hyphen in the name, remove it and replace it with an underscore — for example `hello-agent` becomes `hello_agent`.
+> Since we haven't yet given Bob any specific wxO agent development rules (we'll do that in the next Part 3) — only the MCP servers are abailable to query the current documentation — Bob may make mistakes in the YAML file. One of them is the agent name in the YAML file. WxO does not support hyphens in the agent name. So, if you see a hyphen in the name, remove it and replace it with an underscore — for example `hello-agent` becomes `hello_agent`.
 
 ## Step 3: Import your agent
 

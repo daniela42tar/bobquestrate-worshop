@@ -215,7 +215,7 @@ instructions: |
 ```
 
 #### ❗️ IMPORTANT ❗️ ####
-> Com que encara no hem proporcionat a Bob cap regla específica de desenvolupament d'agents wxO (ho farem a la següent Part 3) — només els servidors MCP per consultar la documentació actual — Bob pot cometre errors al fitxer YAML. Un d'ells és el nom de l'agent al fitxer YAML. WxO no admet guions al nom de l'agent. Per tant, si veus un guió al nom, elimina'l i substitueix-lo per un guió baix — per exemple `hello-agent` esdevé `hello_agent`.
+> Com que encara no hem proporcionat a Bob cap regla específica de desenvolupament d'agents wxO (ho farem a la següent Part 3) — només els servidors MCP estan disponibles per consultar la documentació actual — Bob pot cometre errors al fitxer YAML. Un d'ells és el nom de l'agent al fitxer YAML. WxO no admet guions al nom de l'agent. Per tant, si veus un guió al nom, elimina'l i substitueix-lo per un guió baix — per exemple `hello-agent` esdevé `hello_agent`.
 
 ## Pas 3: Importar el teu agent
 
