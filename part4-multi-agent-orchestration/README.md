@@ -468,7 +468,7 @@ Para este taller, crearemos herramientas simuladas que imitan las capacidades de
 
 ### Crear las herramientas de vuelos
 
-Crea `flight_tools.py`:
+Crea `flight_tools.py`, o pídeselo a Bob (mira el prompt de ejemplo bajo el código):
 
 ```python
 from ibm_watsonx_orchestrate.agent_builder.tools import tool
@@ -648,7 +648,7 @@ book_flight, modify_flight, and cancel_flight tools.
 
 ### Crear las herramientas de hoteles
 
-Crea `hotel_tools.py`:
+Crea `hotel_tools.py`, o pídeselo a Bob (mira el prompt de ejemplo bajo el código).:
 
 ```python
 from ibm_watsonx_orchestrate.agent_builder.tools import tool
@@ -962,7 +962,7 @@ Antes de importar, asegúrate de haber renombrado:
 ```
 Bob, add a postfix "_<your_initials>" to all tool function names in flight_tools.py, hotel_tools.py, activity_tools.py, and budget_tools.py. Then update all agent YAML files to use the renamed tools (activity planner to use activity tools, flifgt specialist to use flight tools, etc.) and add "_<your_initials>" postfix to agent name fields within their yaml-files.
 ```
->**NOTA**: Huelga decirlo, pero actualiza tus iniciales en los marcadores de posición del prompt antes de enviárselo a Bob 😉
+>**NOTA**: Recuerda actualizar tus iniciales en los marcadores de posición del prompt antes de enviárselo a Bob 😉
 
 ### Por qué importa esto
 
@@ -1000,7 +1000,7 @@ orchestrate agents import -f agents/activity_planner_agent.yaml
 orchestrate agents import -f agents/budget_advisor_agent.yaml
 
 # Import orchestrator (must be last, after collaborators exist)
-orchestrate agents import -f travel_concierge_agent.yaml
+orchestrate agents import -f agents/travel_concierge_agent.yaml
 ```
 **💡 Pregúntale a Bob:**
 ```

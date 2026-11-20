@@ -469,7 +469,7 @@ For this workshop, we will create mock tools that imitate the specialists' capab
 
 ### Create the flight tools
 
-Create `flight_tools.py`:
+Create `flight_tools.py`, or ask Bob to do it (look at the example prompt under this code):
 
 ```python
 from ibm_watsonx_orchestrate.agent_builder.tools import tool
@@ -649,7 +649,7 @@ book_flight, modify_flight, and cancel_flight tools.
 
 ### Create the hotel tools
 
-Create `hotel_tools.py`:
+Create `hotel_tools.py`, or ask Bob to do it (look at the example prompt under this code):
 
 ```python
 from ibm_watsonx_orchestrate.agent_builder.tools import tool
@@ -963,7 +963,7 @@ Before importing, make sure you have renamed:
 ```
 Bob, add a postfix "_<your_initials>" to all tool function names in flight_tools.py, hotel_tools.py, activity_tools.py, and budget_tools.py. Then update all agent YAML files to use the renamed tools (activity planner to use activity tools, flifgt specialist to use flight tools, etc.) and add "_<your_initials>" postfix to agent name fields within their yaml-files.
 ```
->**NOTE**: It goes without saying, but update your initials in the prompt placeholders before sending it to Bob 😉
+>**NOTE**: Remember to update your initials in the prompt placeholders before sending it to Bob 😉
 
 ### Why this matters
 
@@ -1001,7 +1001,7 @@ orchestrate agents import -f agents/activity_planner_agent.yaml
 orchestrate agents import -f agents/budget_advisor_agent.yaml
 
 # Import orchestrator (must be last, after collaborators exist)
-orchestrate agents import -f travel_concierge_agent.yaml
+orchestrate agents import -f agents/travel_concierge_agent.yaml
 ```
 **💡 Ask Bob:**
 ```

@@ -25,7 +25,7 @@ hide:
 </div>
 <div class="bw-autor">
 <img src="../part1-setup/images/foto-ofv.png" alt="Oscar Fernandez Valle">
-<div><div class="bw-autor-nombre">Oscar Fernandez Valle</div><div class="bw-autor-rol">AI & BA Customer Success Engineer</div><div class="bw-autor-email"><a href="mailto:oscar_f_v@es.ibm.com">oscar_f_v@es.ibm.com</a></div></div>
+<div><div class="bw-autor-nombre">Oscar Fernandez Valle</div><div class="bw-autor-rol">Customer Success Engineer</div><div class="bw-autor-email"><a href="mailto:oscar_f_v@es.ibm.com">oscar_f_v@es.ibm.com</a></div></div>
 </div>
 </div>
 </dialog>
