@@ -39,10 +39,10 @@ Cada parte se apoya en la anterior y te lleva desde un entorno operativo hasta u
 
 | Parte | Tema | Tiempo |
 |------|-------|------|
-| [1 — Configuración y entorno](part1-setup/README.md) | Configurar watsonx Orchestrate y comprobar que Bob es tu compañero de programación con IA | 15 min |
-| [2 — Tu primer agente](part2-first-agent/README.md) | Crear un agente «Hello World» y chatear con él | 20 min |
+| [1 — Configuración y entorno](part1-setup/README.md) | Configurar watsonx Orchestrate y comprobar que Bob es tu compañero de programación con IA | 50 min |
+| [2 — Tu primer agente](part2-first-agent/README.md) | Crear un agente «Hello World» y chatear con él | 30 min |
 | [3 — Herramientas personalizadas](part3-custom-tools/README.md) | Crear herramientas personalizadas en Python (consultar pedidos y reembolsos) y conectarlas a tu agente | 30 min |
-| [5 — Orquestación multiagente](part4-multi-agent-orchestration/README.md) ⭐ | Construir un conserje de viajes con cuatro agentes especialistas y un orquestador | 30 min |
+| [5 — Orquestación multiagente](part4-multi-agent-orchestration/README.md) ⭐ | Construir un conserje de viajes con cuatro agentes especialistas y un orquestador | 55 min |
 
 ## Cómo te ayuda Bob
 

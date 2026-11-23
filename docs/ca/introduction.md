@@ -39,10 +39,10 @@ Cada part es recolza en l'anterior i et du des d'un entorn operatiu fins a un si
 
 | Part | Tema | Temps |
 |------|-------|------|
-| [1 — Configuració i entorn](../part1-setup/README.md) | Configurar watsonx Orchestrate i comprovar que Bob és el teu company de programació amb IA | 15 min |
-| [2 — El teu primer agent](../part2-first-agent/README.md) | Crear un agent «Hello World» i xatejar-hi | 20 min |
+| [1 — Configuració i entorn](../part1-setup/README.md) | Configurar watsonx Orchestrate i comprovar que Bob és el teu company de programació amb IA | 50 min |
+| [2 — El teu primer agent](../part2-first-agent/README.md) | Crear un agent «Hello World» i xatejar-hi | 30 min |
 | [3 — Eines personalitzades](../part3-custom-tools/README.md) | Crear eines personalitzades en Python (consultar comandes i reemborsaments) i connectar-les al teu agent | 30 min |
-| [5 — Orquestració multiagent](../part4-multi-agent-orchestration/README.md) ⭐ | Construir un conserge de viatges amb quatre agents especialistes i un orquestrador | 30 min |
+| [5 — Orquestració multiagent](../part4-multi-agent-orchestration/README.md) ⭐ | Construir un conserge de viatges amb quatre agents especialistes i un orquestrador | 55 min |
 
 ## Com t'ajuda Bob
 

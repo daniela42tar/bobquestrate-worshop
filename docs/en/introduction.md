@@ -39,10 +39,10 @@ Each part builds on the previous one and takes you from a working environment to
 
 | Part | Topic | Time |
 |------|-------|------|
-| [1 — Setup and environment](../part1-setup/README.md) | Set up watsonx Orchestrate and check that Bob is your AI coding companion | 15 min |
-| [2 — Your first agent](../part2-first-agent/README.md) | Create a "Hello World" agent and chat with it | 20 min |
+| [1 — Setup and environment](../part1-setup/README.md) | Set up watsonx Orchestrate and check that Bob is your AI coding companion | 50 min |
+| [2 — Your first agent](../part2-first-agent/README.md) | Create a "Hello World" agent and chat with it | 30 min |
 | [3 — Custom tools](../part3-custom-tools/README.md) | Create custom Python tools (order lookup and refunds) and connect them to your agent | 30 min |
-| [5 — Multi-agent orchestration](../part4-multi-agent-orchestration/README.md) ⭐ | Build a travel concierge with four specialist agents and an orchestrator | 30 min |
+| [5 — Multi-agent orchestration](../part4-multi-agent-orchestration/README.md) ⭐ | Build a travel concierge with four specialist agents and an orchestrator | 55 min |
 
 ## How Bob helps you
 

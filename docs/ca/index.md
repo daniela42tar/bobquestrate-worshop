@@ -41,12 +41,12 @@ hide:
 <div class="bw-cards">
 <a class="bw-card" href="../part1-setup/">
 <span class="bw-chip">1</span>
-<span class="bw-body"><span class="bw-kick">Part 1</span><span class="bw-title">Configuració i entorn</span><span class="bw-sub">Configura watsonx Orchestrate i comprova que Bob funciona · ⏱️ 15 min</span></span>
+<span class="bw-body"><span class="bw-kick">Part 1</span><span class="bw-title">Configuració i entorn</span><span class="bw-sub">Configura watsonx Orchestrate i comprova que Bob funciona · ⏱️ 50 min</span></span>
 <span class="bw-chev">›</span>
 </a>
 <a class="bw-card" href="../part2-first-agent/">
 <span class="bw-chip">2</span>
-<span class="bw-body"><span class="bw-kick">Part 2</span><span class="bw-title">El teu primer agent</span><span class="bw-sub">Crea un agent «Hello World» i xateja-hi · ⏱️ 20 min</span></span>
+<span class="bw-body"><span class="bw-kick">Part 2</span><span class="bw-title">El teu primer agent</span><span class="bw-sub">Crea un agent «Hello World» i xateja-hi · ⏱️ 30 min</span></span>
 <span class="bw-chev">›</span>
 </a>
 <a class="bw-card" href="../part3-custom-tools/">
@@ -56,7 +56,7 @@ hide:
 </a>
 <a class="bw-card" href="../part4-multi-agent-orchestration/">
 <span class="bw-chip">4</span>
-<span class="bw-body"><span class="bw-kick">Part 4 · ⭐ Avançat</span><span class="bw-title">Orquestració multiagent</span><span class="bw-sub">Un conserge de viatges amb quatre agents especialistes i un orquestrador · ⏱️ 30 min</span></span>
+<span class="bw-body"><span class="bw-kick">Part 4 · ⭐ Avançat</span><span class="bw-title">Orquestració multiagent</span><span class="bw-sub">Un conserge de viatges amb quatre agents especialistes i un orquestrador · ⏱️ 55 min</span></span>
 <span class="bw-chev">›</span>
 </a>
 </div>

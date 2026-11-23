@@ -41,12 +41,12 @@ hide:
 <div class="bw-cards">
 <a class="bw-card" href="../part1-setup/">
 <span class="bw-chip">1</span>
-<span class="bw-body"><span class="bw-kick">Part 1</span><span class="bw-title">Setup and environment</span><span class="bw-sub">Set up watsonx Orchestrate and check that Bob is working · ⏱️ 15 min</span></span>
+<span class="bw-body"><span class="bw-kick">Part 1</span><span class="bw-title">Setup and environment</span><span class="bw-sub">Set up watsonx Orchestrate and check that Bob is working · ⏱️ 50 min</span></span>
 <span class="bw-chev">›</span>
 </a>
 <a class="bw-card" href="../part2-first-agent/">
 <span class="bw-chip">2</span>
-<span class="bw-body"><span class="bw-kick">Part 2</span><span class="bw-title">Your first agent</span><span class="bw-sub">Create a "Hello World" agent and chat with it · ⏱️ 20 min</span></span>
+<span class="bw-body"><span class="bw-kick">Part 2</span><span class="bw-title">Your first agent</span><span class="bw-sub">Create a "Hello World" agent and chat with it · ⏱️ 30 min</span></span>
 <span class="bw-chev">›</span>
 </a>
 <a class="bw-card" href="../part3-custom-tools/">
@@ -56,7 +56,7 @@ hide:
 </a>
 <a class="bw-card" href="../part4-multi-agent-orchestration/">
 <span class="bw-chip">4</span>
-<span class="bw-body"><span class="bw-kick">Part 4 · ⭐ Advanced</span><span class="bw-title">Multi-agent orchestration</span><span class="bw-sub">A travel concierge with four specialist agents and an orchestrator · ⏱️ 30 min</span></span>
+<span class="bw-body"><span class="bw-kick">Part 4 · ⭐ Advanced</span><span class="bw-title">Multi-agent orchestration</span><span class="bw-sub">A travel concierge with four specialist agents and an orchestrator · ⏱️ 55 min</span></span>
 <span class="bw-chev">›</span>
 </a>
 </div>
