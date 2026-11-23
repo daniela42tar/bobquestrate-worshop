@@ -15,13 +15,13 @@ Welcome! This workshop will guide you through building AI agents with IBM watson
 
 ## Workshop overview
 
-**Duration:** 105-120 minutes
+**Duration:** 160-180 minutes
 
 This estimate includes:
 
-- Core instruction time: 85-95 minutes (all parts)
-- Setup and troubleshooting: 10-15 minutes
-- Questions and discussion: 10-15 minutes
+- Core instruction time: 105-110 minutes (all parts)
+- Setup and troubleshooting: 40-50 minutes
+- Questions and discussion: 15-20 minutes
 
 **Level:** Beginner (Parts 1-3) to Advanced (Part 4)
 

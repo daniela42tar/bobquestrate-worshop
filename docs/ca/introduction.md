@@ -15,13 +15,13 @@ Us donem la benvinguda! Aquest taller et guiarà en la creació d'agents d'IA am
 
 ## Resum del taller
 
-**Durada:** 105-120 minuts
+**Durada:** 160-180 minuts
 
 Aquesta estimació inclou:
 
-- Temps d'instrucció principal: 85-95 minuts (totes les parts)
-- Configuració i resolució de problemes: 10-15 minuts
-- Preguntes i debat: 10-15 minuts
+- Temps d'instrucció principal: 105-110 minuts (totes les parts)
+- Configuració i resolució de problemes: 40-50 minuts
+- Preguntes i debat: 15-20 minuts
 
 **Nivell:** Principiant (Parts 1-3) a Avançat (Part 4)
 

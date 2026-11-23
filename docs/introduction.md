@@ -15,13 +15,13 @@ hide:
 
 ## Resumen del taller
 
-**Duración:** 105-120 minutos
+**Duración:** 160-180 minutos
 
 Esta estimación incluye:
 
-- Tiempo de instrucción principal: 85-95 minutos (todas las partes)
-- Configuración y resolución de problemas: 10-15 minutos
-- Preguntas y debate: 10-15 minutos
+- Tiempo de instrucción principal: 105-110 minutos (todas las partes)
+- Configuración y resolución de problemas: 40-50 minutos
+- Preguntas y debate: 15-20 minutos
 
 **Nivel:** Principiante (Partes 1-3) a Avanzado (Parte 4)
 
