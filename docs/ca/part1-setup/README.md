@@ -333,7 +333,7 @@ Els servidors MCP proporcionen:
 
 Importa un mode personalitzat preconfigurat i especialitzat per construir agents de watsonx Orchestrate.
 
->**NOTA**: IBM Bob Marketplace té molts modes preconfigurats per a IBM Bob IDE, inclòs un mode per construir agents de watsonx Orchestrate. Malauradament, el marketplace no està disponible actualment per a persones externes a IBM, tot i que ho estarà en un futur proper. Aquest pas et guiarà sobre com importar un mode personalitzat manualment.
+>**NOTA**: IBM Bob Marketplace té molts modes preconfigurats per a IBM Bob IDE, inclòs un mode per construir agents de watsonx Orchestrate. Aquest pas et guiarà sobre com importar un mode personalitzat manualment.
 
 1. Crea un fitxer anomenat `wxo_agent_architect_export.yaml` (a la carpeta del teu taller o a Descàrregues) i enganxa-hi el contingut següent:
 

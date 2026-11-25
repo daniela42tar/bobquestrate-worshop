@@ -190,16 +190,16 @@ Anem a crear un agent "Hello World" simple. Assegura't de tenir el mode `WXO Age
 
 #### Demana ajuda a Bob:
 ```
-Bob, create a YAML file called hello_agent.yaml that defines a simple watsonx Orchestrate agent that greets users and tells them about itself.
+Bob, create a YAML file called hello_agent_<your-initials>.yaml that defines a simple watsonx Orchestrate agent that greets users and tells them about itself.
 ```
 
 O crea el fitxer YAML manualment (consulta [hello_agent_EXAMPLE.yaml](../../part2-first-agent/hello_agent_EXAMPLE.yaml) com a referència):
 
 ```yaml
-# hello_agent.yaml
+# hello_agent_<your-initials>.yaml
 spec_version: v1
 kind: native
-name: hello_world_agent
+name: hello_world_agent_<your-initials>
 llm: groq/openai/gpt-oss-120b
 description: A friendly agent that greets users and introduces itself
 instructions: |
@@ -226,7 +226,7 @@ instructions: |
 
 ### Opció A: Utilitzant Bob
 ```
-Bob, help me import the hello_agent.yaml file into my active environment. Use the available Python virtual environment (.venv).
+Bob, help me import the hello_agent_<your-initials>.yaml file into my active environment. Use the available Python virtual environment (.venv).
 ```
 
 >NOTA: IBM Bob utilitza el seu propi terminal per executar les comandes, de manera que pot trigar una mica a entendre que ha d'utilitzar l'entorn virtual Python existent (.venv). Per això és bona idea incloure aquesta informació al prompt. També pots provar-ho sense i aprovar que Bob tingui accés a tots els fitxers necessaris i als servidors MCP de wxO. Bob hauria d'acabar resolent-ho tot sol i importar l'agent correctament.
@@ -236,7 +236,7 @@ Bob, help me import the hello_agent.yaml file into my active environment. Use th
 ### Opció B: Manualment utilitzant la CLI de watsonx Orchestrate — executant la comanda _orchestrate_ al terminal
 
 ```bash
-orchestrate agents import -f hello_agent.yaml
+orchestrate agents import -f hello_agent_<your-initials>.yaml
 ```
 
 Hauries de veure:
@@ -275,7 +275,7 @@ El camp `instructions` és crucial — defineix el comportament del teu agent.
 
 **Demana-li a Bob:** (assegura't de tenir el mode WXO Agent Architect seleccionat)
 ```
-Bob, improve the instructions in hello_agent.yaml to make the agent more helpful and specific about what it can do in this workshop context
+Bob, improve the instructions in hello_agent_<your-initials>.yaml to make the agent more helpful and specific about what it can do in this workshop context
 ```
 
 Bob podria suggerir alguna cosa com:
@@ -316,7 +316,7 @@ Deixa que Bob desi les instruccions actualitzades al teu fitxer hello_agent.yaml
 Després de modificar el fitxer YAML, torna a importar-lo:
 
 ```bash
-orchestrate agents import -f hello_agent.yaml
+orchestrate agents import -f hello_agent_<your-initials>.yaml
 ```
 
 L'agent s'actualitzarà amb les teves noves instruccions. **Prova'l** de nou per veure la diferència!

@@ -190,16 +190,16 @@ Vamos a crear un agente "Hello World" simple. Asegúrate de tener el modo `WXO A
 
 #### Pídele ayuda a Bob:
 ```
-Bob, create a YAML file called hello_agent.yaml that defines a simple watsonx Orchestrate agent that greets users and tells them about itself.
+Bob, create a YAML file called hello_agent_<your-initials>.yaml that defines a simple watsonx Orchestrate agent that greets users and tells them about itself.
 ```
 
 O crea el fichero YAML manualmente (consulta [hello_agent_EXAMPLE.yaml](./hello_agent_EXAMPLE.yaml) como referencia):
 
 ```yaml
-# hello_agent.yaml
+# hello_agent_<your-initials>.yaml
 spec_version: v1
 kind: native
-name: hello_world_agent
+name: hello_world_agent_<your-initials>
 llm: groq/openai/gpt-oss-120b
 description: A friendly agent that greets users and introduces itself
 instructions: |
@@ -226,7 +226,7 @@ instructions: |
 
 ### Opción A: Usando Bob
 ```
-Bob, help me import the hello_agent.yaml file into my active environment. Use the available Python virtual environment (.venv).
+Bob, help me import the hello_agent_<your-initials>.yaml file into my active environment. Use the available Python virtual environment (.venv).
 ```
 
 >NOTA: IBM Bob usa su propio terminal para ejecutar los comandos, por lo que puede tardar un poco en entender que necesita usar el entorno virtual Python existente (.venv). Por eso es buena idea incluir esa información en el prompt. También puedes probarlo sin ella y aprobar que Bob tenga acceso a todos los ficheros necesarios y a los servidores MCP de wxO. Bob debería acabar por resolverlo solo e importar el agente correctamente.
@@ -236,7 +236,7 @@ Bob, help me import the hello_agent.yaml file into my active environment. Use th
 ### Opción B: Manualmente usando la CLI de watsonx Orchestrate — ejecutando el comando _orchestrate_ en el terminal
 
 ```bash
-orchestrate agents import -f hello_agent.yaml
+orchestrate agents import -f hello_agent_<your-initials>.yaml
 ```
 
 Deberías ver:
@@ -275,7 +275,7 @@ El campo `instructions` es crucial — define el comportamiento de tu agente.
 
 **Pídele a Bob:** (asegúrate de tener el modo WXO Agent Architect seleccionado)
 ```
-Bob, improve the instructions in hello_agent.yaml to make the agent more helpful and specific about what it can do in this workshop context
+Bob, improve the instructions in hello_agent_<your-initials>.yaml to make the agent more helpful and specific about what it can do in this workshop context
 ```
 
 Bob podría sugerir algo como:
@@ -316,7 +316,7 @@ Deja que Bob guarde las instrucciones actualizadas en tu fichero hello_agent.yam
 Después de modificar el fichero YAML, vuelve a importarlo:
 
 ```bash
-orchestrate agents import -f hello_agent.yaml
+orchestrate agents import -f hello_agent_<your-initials>.yaml
 ```
 
 El agente se actualizará con tus nuevas instrucciones. ¡**Pruébalo** de nuevo para ver la diferencia!

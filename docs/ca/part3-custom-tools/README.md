@@ -103,13 +103,13 @@ Bob, create a Python tool for watsonx Orchestrate that checks order status. It s
 O crea-la manualment:
 
 ```python
-# order_status_tool.py
+# order_status_tool_<your-initials>.py
 from ibm_watsonx_orchestrate.agent_builder.tools import tool
 from datetime import datetime, timedelta
 import random
 
 @tool
-def check_order_status(order_id: str) -> dict:
+def check_order_status_<your-initials>(order_id: str) -> dict:
     """
     Retrieves the current status and details of a customer order by order ID.
     Use this when customers ask about their order status, delivery date, or order details.
@@ -165,13 +165,13 @@ Bob, create a Python tool that processes refund requests. It should take order_i
 ```
 Un exemple del que Bob podria generar:
 ```python
-# refund_tool.py
+# refund_tool_<your-initials>.py
 from ibm_watsonx_orchestrate.agent_builder.tools import tool
 from datetime import datetime
 import random
 
 @tool
-def process_refund(order_id: str, reason: str, amount: float) -> dict:
+def process_refund_<your-initials>(order_id: str, reason: str, amount: float) -> dict:
     """
     Processes a refund request for a customer order.
     Use this when customers request refunds or returns.
@@ -247,8 +247,8 @@ Fixa't que, ara que Bob utilitza la regla personalitzada de desenvolupament per 
 Importa les eines a watsonx Orchestrate:
 
 ```bash
-orchestrate tools import -k python -f tools/check_order_status.py
-orchestrate tools import -k python -f tools/process_refund.py
+orchestrate tools import -k python -f tools/check_order_status_<your-initials>.py
+orchestrate tools import -k python -f tools/process_refund_<your-initials>.py
 ```
 
 >NOTA: Els noms dels fitxers Python generats per Bob poden ser diferents dels que es mostren aquí. Fes servir els noms de fitxer tal com Bob els ha creat.
@@ -278,7 +278,7 @@ Hauries de veure les teves eines a la llista!
 
 Ara crea un agent que utilitzi aquestes eines. Pots fer servir la definició de sota; també l'ha creat Bob.
 
-1. Crea un nou fitxer `customer_support_agent.yaml` al directori `agents` del teu espai de treball. Bob hauria d'haver creat aquest directori en crear les eines. Si no existeix, crea'l manualment.
+1. Crea un nou fitxer `customer_support_agent_<your-initials>.yaml` al directori `agents` del teu espai de treball. Bob hauria d'haver creat aquest directori en crear les eines. Si no existeix, crea'l manualment.
 2. Copia el contingut de sota al fitxer i desa'l.
 
 
@@ -328,7 +328,7 @@ tools:
 
 Importa l'agent:
 ```bash
-orchestrate agents import -f agents/customer_support_agent.yaml
+orchestrate agents import -f agents/customer_support_agent_<your-initials>.yaml
 ```
 
 ## Pas 5: Provar el teu agent amb eines
@@ -336,7 +336,7 @@ orchestrate agents import -f agents/customer_support_agent.yaml
 Prova l'agent:
 
 ```bash
-orchestrate chat ask -n customer_support_agent_<your_initials_here>
+orchestrate chat ask -n customer_support_agent_<your_initials>
 ```
 
 Prova aquests escenaris:
