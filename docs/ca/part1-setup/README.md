@@ -469,7 +469,7 @@ Ara que tens habilitats els servidors MCP de watsonx Orchestrate i el mode WXO A
 1. Assegura't de tenir el mode **WXO Agent Architect** seleccionat al teu xat de Bob. Després demana a Bob que creï un script per afegir i activar un nou entorn de watsonx Orchestrate per a l'ADK:
 
       ```
-      Create a simple shell script to add and activate new watsonx Orchestrate SaaS environment for the ADK. I have the environment URL and API key ready.
+      Create a simple script to add and activate new watsonx Orchestrate SaaS environment for the ADK. I have the environment URL and API key ready.
       ```
 
       <img src="../../part1-setup/images/image-16.png" alt="Create a script to add and activate a new watsonx Orchestrate environment for the ADK" width="400px">

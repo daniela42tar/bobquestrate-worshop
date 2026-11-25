@@ -1001,7 +1001,7 @@ orchestrate agents import -f agents/travel_concierge_agent_<your-initials>.yaml
 ```
 **💡 Pregunta-ho a Bob:**
 ```
-Bob, create a shell script that imports all agents (flight specialist, hotel specialist, activty planner, budget advisor and finally tra) and their tools in the correct order. Make sure each agent is imported after its collaborators.
+Bob, create a script that imports all agents (flight specialist, hotel specialist, activty planner, budget advisor and finally tra) and their tools in the correct order. Make sure each agent is imported after its collaborators.
 ```
 >**NOTA**: Revisa la sintaxi d'importació d'eines i agents que utilitza Bob al script generat. Tot i que la informació sobre la sintaxi correcta està disponible a la regla de desenvolupament personalitzada que estem utilitzant, de vegades Bob pot no consultar-la abans de crear coses.
 

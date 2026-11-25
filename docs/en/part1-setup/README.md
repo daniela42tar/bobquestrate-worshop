@@ -469,7 +469,7 @@ Now that you have the watsonx Orchestrate MCP servers and the WXO Agent Architec
 1. Make sure you have the **WXO Agent Architect** mode selected in your Bob chat. Then ask Bob to create a script to add and activate a new watsonx Orchestrate environment for the ADK:
 
       ```
-      Create a simple shell script to add and activate new watsonx Orchestrate SaaS environment for the ADK. I have the environment URL and API key ready.
+      Create a simple script to add and activate new watsonx Orchestrate SaaS environment for the ADK. I have the environment URL and API key ready.
       ```
 
       <img src="../../part1-setup/images/image-16.png" alt="Create a script to add and activate a new watsonx Orchestrate environment for the ADK" width="400px">
