@@ -9,7 +9,7 @@ hide:
   <img src="../../part2-first-agent/bobchestrate_part2.png" alt="Bobchestrate - Build Your First Agent" width="700">
 </p>
 
-**Durada:** 20 minuts
+**Durada:** 30 minuts
 
 **Objectiu:** Crear un agent simple i entendre els fonaments de la configuració d'agents
 

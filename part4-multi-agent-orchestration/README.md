@@ -9,7 +9,7 @@ hide:
   <img src="bobchestrate_part4.png" alt="Bobchestrate - Setup" width="700">
 </p>
 
-**Duración**: 30 minutos
+**Duración**: 55 minutos
 
 **Dificultad**: Avanzado
 

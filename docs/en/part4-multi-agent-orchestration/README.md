@@ -9,7 +9,7 @@ hide:
   <img src="../../part4-multi-agent-orchestration/bobchestrate_part4.png" alt="Bobchestrate - Setup" width="700">
 </p>
 
-**Duration**: 30 minutes
+**Duration**: 55 minutes
 
 **Difficulty**: Advanced
 

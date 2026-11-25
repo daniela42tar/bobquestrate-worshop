@@ -9,7 +9,7 @@ hide:
   <img src="bobchestrate_part1.png" alt="Bobchestrate - Setup" width="700">
 </p>
 
-**Duración:** 15 minutos
+**Duración:** 50 minutos
 
 **Objetivo:** Preparar tu entorno de desarrollo para construir agentes de watsonx Orchestrate
 

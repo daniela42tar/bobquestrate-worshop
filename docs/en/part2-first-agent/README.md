@@ -9,7 +9,7 @@ hide:
   <img src="../../part2-first-agent/bobchestrate_part2.png" alt="Bobchestrate - Build Your First Agent" width="700">
 </p>
 
-**Duration:** 20 minutes
+**Duration:** 30 minutes
 
 **Goal:** Create a simple agent and understand the fundamentals of agent configuration
 
