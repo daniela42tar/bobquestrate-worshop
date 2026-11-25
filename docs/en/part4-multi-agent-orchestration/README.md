@@ -169,12 +169,12 @@ The orchestrator acts as a supervisor with no domain tools of its own, delegatin
 
 ### Step 1: Create the flight specialist
 
-[Download](../../part4-multi-agent-orchestration/flight_specialist_agent.yaml) the `flight_specialist_agent.yaml` example or ask Bob for it (see the example prompt below the YAML). **HINT**: you should ask Bob. He will create something better than the simple example 🤓 And it only costs around 0.3 bobcoins 🪙
+Copy the `flight_specialist_agent_<your-initials>.yaml` example or ask Bob for it (see the example prompt below the YAML). **HINT**: you should ask Bob. He will create something better than the simple example 🤓 And it only costs around 0.3 bobcoins 🪙
 
 ```yaml
 spec_version: v1
 kind: native
-name: flight_specialist
+name: flight_specialist_<your-initials>
 title: Flight Booking Specialist
 description: Expert in flight searches, bookings, changes, and cancellations. Handles all flight-related queries including availability, pricing, and itinerary modifications.
 
@@ -208,29 +208,28 @@ instructions: |
   - End with clear next steps
 
 tools:
-  - search_flights
-  - book_flight
-  - modify_flight
-  - cancel_flight
+  - search_flights_<your-initials>
+  - book_flight_<your-initials>
+  - modify_flight_<your-initials>
+  - cancel_flight_<your-initials>
 
 llm: groq/openai/gpt-oss-120b
 ```
 
 **💡 Ask Bob:**
 ```
-Bob, create a flight_specialist_agent.yaml file with focused instructions
-for handling flight bookings and searches.
+Bob, create a flight_specialist_agent_<your-initials>.yaml file with focused instructions for handling flight bookings and searches.
 ```
 When Bob is done, you will have a new agent file saved in your agents directory. Take a look at what Bob created for you. Pretty professional, right? With real guidelines and placeholders for the tools. We will create the tools a bit later.
 
 ### Step 2: Create the hotel specialist
 
-[Download](../../part4-multi-agent-orchestration/hotel_specialist_agent.yaml) the `hotel_specialist_agent.yaml` example or ask Bob for it. By now you should have an idea of how to phrase the prompt for this agent 😉 You can try several times until you are happy with the result.
+Copy the `hotel_specialist_agent_<your-initials>.yaml` example or ask Bob for it. By now you should have an idea of how to phrase the prompt for this agent 😉 You can try several times until you are happy with the result.
 
 ```yaml
 spec_version: v1
 kind: native
-name: hotel_specialist
+name: hotel_specialist_<your-initials>
 title: Hotel Booking Specialist
 description: Expert in hotel accommodations, reservations, and lodging options. Handles hotel searches, bookings, modifications, and provides recommendations based on preferences and budget.
 
@@ -265,22 +264,22 @@ instructions: |
   - Cancellation policy summary
 
 tools:
-  - search_hotels
-  - book_hotel
-  - modify_hotel_booking
-  - cancel_hotel_booking
+  - search_hotels_<your-initials>
+  - book_hotel_<your-initials>
+  - modify_hotel_booking_<your-initials>
+  - cancel_hotel_booking_<your-initials>
 
 llm: groq/openai/gpt-oss-120b
 ```
 
 ### Step 3: Create the activity planner
 
-[Download](../../part4-multi-agent-orchestration/activity_planner_agent.yaml) the `activity_planner_agent.yaml` example or ask Bob for it.
+Copy the `activity_planner_agent.yaml` example or ask Bob for it.
 
 ```yaml
 spec_version: v1
 kind: native
-name: activity_planner
+name: activity_planner_<your-initials>
 title: Local Activity Specialist
 description: Expert in local attractions, activities, tours, and experiences. Provides personalized recommendations for things to do based on interests, location, and travel dates.
 
@@ -315,22 +314,22 @@ instructions: |
   - Booking/reservation requirements
 
 tools:
-  - search_activities
-  - get_activity_details
-  - search_restaurants
-  - create_itinerary
+  - search_activities_<your-initials>
+  - get_activity_details_<your-initials>
+  - search_restaurants_<your-initials>
+  - create_itinerary_<your-initials>
 
 llm: groq/openai/gpt-oss-120b
 ```
 
 ### Step 4: Create the budget advisor
 
-[Download](../../part4-multi-agent-orchestration/budget_advisor_agent.yaml) the `budget_advisor_agent.yaml` example or ask Bob for it. HINT: have you ever thought of asking Bob for a prompt to create a specific type of agent? Just saying 😉
+Copy the `budget_advisor_agent_<your-initials>.yaml` example or ask Bob for it.
 
 ```yaml
 spec_version: v1
 kind: native
-name: budget_advisor
+name: budget_advisor_<your-initials>
 title: Travel Budget Specialist
 description: Expert in travel cost analysis, budget planning, and money-saving strategies. Helps travelers understand costs, find deals, and optimize their travel budget.
 
@@ -366,10 +365,10 @@ instructions: |
   - Alternative options if over budget
 
 tools:
-  - calculate_trip_cost
-  - compare_options
-  - find_deals
-  - budget_optimizer
+  - calculate_trip_cost_<your-initials>
+  - compare_options_<your-initials>
+  - find_deals_<your-initials>
+  - budget_optimizer_<your-initials>
 
 llm: groq/openai/gpt-oss-120b
 ```
@@ -382,12 +381,12 @@ llm: groq/openai/gpt-oss-120b
 
 The orchestrator needs clear routing logic:
 
-[Download](../../part4-multi-agent-orchestration/travel_concierge_agent.yaml) the `travel_concierge_agent.yaml` example or ask Bob for it (see the example prompt below the YAML).
+Copy the `travel_concierge_agent_<your-initials>.yaml` example or ask Bob for it (see the example prompt below the YAML).
 
 ```yaml
 spec_version: v1
 kind: native
-name: travel_concierge
+name: travel_concierge_<your-initials>
 title: Travel Concierge
 description: Your personal travel planning assistant that coordinates with specialists to help plan your perfect trip.
 
@@ -447,18 +446,17 @@ instructions: |
   - Proactive in suggesting next steps
 
 collaborators:
-  - flight_specialist
-  - hotel_specialist
-  - activity_planner
-  - budget_advisor
+  - flight_specialist_<your-initials>
+  - hotel_specialist_<your-initials>
+  - activity_planner_<your-initials>
+  - budget_advisor_<your-initials>
 
 llm: groq/openai/gpt-oss-120b
 ```
 
 **💡 Ask Bob:**
 ```
-Bob, create a travel_concierge_agent.yaml that orchestrates between
-the four specialist agents with clear routing logic. The collaborators are flight_specialist, hotel_specialist, activity_planner, and budget_advisor. The agent should handle complex multi-aspect travel requests by routing to the appropriate specialist and synthesizing responses.
+Bob, create a travel_concierge_agent_<your-initials>.yaml that orchestrates between the four specialist agents with clear routing logic. The collaborators are flight_specialist_<your-initials>, hotel_specialist_<your-initials>, activity_planner_<your-initials>, and budget_advisor_<your-initials>. The agent should handle complex multi-aspect travel requests by routing to the appropriate specialist and synthesizing responses.
 ```
 ---
 
@@ -469,13 +467,13 @@ For this workshop, we will create mock tools that imitate the specialists' capab
 
 ### Create the flight tools
 
-Create `flight_tools.py`, or ask Bob to do it (look at the example prompt under this code):
+Create `flight_tools_<your-initials>.py`, or ask Bob to do it (look at the example prompt under this code):
 
 ```python
 from ibm_watsonx_orchestrate.agent_builder.tools import tool
 
 @tool
-def search_flights(
+def search_flights_<your-initials>(
     origin: str,
     destination: str,
     departure_date: str,
@@ -550,7 +548,7 @@ def search_flights(
 
 
 @tool
-def book_flight(
+def book_flight_<your-initials>(
     flight_number: str,
     passenger_name: str,
     passenger_email: str
@@ -586,7 +584,7 @@ def book_flight(
 
 
 @tool
-def modify_flight(
+def modify_flight_<your-initials>(
     confirmation_number: str,
     new_date: str = None,
     new_flight: str = None
@@ -620,7 +618,7 @@ def modify_flight(
 
 
 @tool
-def cancel_flight(confirmation_number: str) -> dict:
+def cancel_flight_<your-initials>(confirmation_number: str) -> dict:
     """
     Cancel a flight booking.
     
@@ -643,19 +641,18 @@ def cancel_flight(confirmation_number: str) -> dict:
 
 **💡 Ask Bob:**
 ```
-Bob, create flight_tools.py with mock implementations of search_flights,
-book_flight, modify_flight, and cancel_flight tools.
+Bob, create flight_tools_<your-initials>.py with mock implementations of search_flights_<your-initials>, book_flight_<your-initials>, modify_flight_<your-initials>, and cancel_flight_<your-initials> tools.
 ```
 
 ### Create the hotel tools
 
-Create `hotel_tools.py`, or ask Bob to do it (look at the example prompt under this code):
+Create `hotel_tools_<your-initials>.py`, or ask Bob to do it (look at the example prompt under this code):
 
 ```python
 from ibm_watsonx_orchestrate.agent_builder.tools import tool
 
 @tool
-def search_hotels(
+def search_hotels_<your-initials>(
     location: str,
     check_in: str,
     check_out: str,
@@ -740,7 +737,7 @@ def search_hotels(
 
 
 @tool
-def book_hotel(
+def book_hotel_<your-initials>(
     hotel_name: str,
     guest_name: str,
     guest_email: str,
@@ -786,7 +783,7 @@ def book_hotel(
 
 
 @tool
-def modify_hotel_booking(
+def modify_hotel_booking_<your-initials>(
     confirmation_number: str,
     new_check_in: str = None,
     new_check_out: str = None,
@@ -822,7 +819,7 @@ def modify_hotel_booking(
 
 
 @tool
-def cancel_hotel_booking(confirmation_number: str) -> dict:
+def cancel_hotel_booking_<your-initials>(confirmation_number: str) -> dict:
     """
     Cancel hotel booking.
     
@@ -845,8 +842,7 @@ def cancel_hotel_booking(confirmation_number: str) -> dict:
 
 **💡 Ask Bob:**
 ```
-Bob, create hotel_tools.py with mock implementations of search_hotels,
-book_hotel, modify_hotel_booking, and cancel_hotel_booking tools.
+Bob, create hotel_tools_<your-initials>.py with mock implementations of search_hotels_<your-initials>, book_hotel_<your-initials>, modify_hotel_booking_<your-initials>, and cancel_hotel_booking_<your-initials> tools.
 ```
 
 ### Create the activity tools
@@ -867,12 +863,11 @@ The file should include:
 
 ### Create the budget tools
 
-Create `budget_tools.py` with the tools for the budget advisor:
+Create `budget_tools_<your-initials>.py` with the tools for the budget advisor:
 
 **💡 Ask Bob:**
 ```
-Bob, create budget_tools.py with mock implementations of calculate_trip_cost,
-compare_options, find_deals, and budget_optimizer tools.
+Bob, create budget_tools_<your-initials>.py with mock implementations of calculate_trip_cost_<your-initials>, compare_options_<your-initials>, find_deals_<your-initials>, and budget_optimizer_<your-initials> tools.
 ```
 
 The file should include:
@@ -903,7 +898,7 @@ If your name is **Jane Smith** (initials: JS), rename your tools and agents as f
 
 **Tools:**
 ```python
-# In flight_tools.py
+# In flight_tools_JS.py
 @tool
 def search_flights_JS(...):  # Added _JS postfix
     """Search for available flights."""
@@ -983,25 +978,25 @@ With unique names:
 
 ---
 
-## Part 4: Testing multi-agent workflows
+## Part 5: Testing multi-agent workflows
 
 ### Import all agents and tools
 
 ```bash
 # Import all tools
-orchestrate tools import -k python -f tools/flight_tools.py
-orchestrate tools import -k python -f tools/hotel_tools.py
-orchestrate tools import -k python -f tools/activity_tools.py
-orchestrate tools import -k python -f tools/budget_tools.py
+orchestrate tools import -k python -f tools/flight_tools_<your-initials>.py
+orchestrate tools import -k python -f tools/hotel_tools_<your-initials>.py
+orchestrate tools import -k python -f tools/activity_tools_<your-initials>.py
+orchestrate tools import -k python -f tools/budget_tools_<your-initials>.py
 
 # Import specialist agents
-orchestrate agents import -f agents/flight_specialist_agent.yaml
-orchestrate agents import -f agents/hotel_specialist_agent.yaml
-orchestrate agents import -f agents/activity_planner_agent.yaml
-orchestrate agents import -f agents/budget_advisor_agent.yaml
+orchestrate agents import -f agents/flight_specialist_agent_<your-initials>.yaml
+orchestrate agents import -f agents/hotel_specialist_agent_<your-initials>.yaml
+orchestrate agents import -f agents/activity_planner_agent_<your-initials>.yaml
+orchestrate agents import -f agents/budget_advisor_agent_<your-initials>.yaml
 
 # Import orchestrator (must be last, after collaborators exist)
-orchestrate agents import -f agents/travel_concierge_agent.yaml
+orchestrate agents import -f agents/travel_concierge_agent_<your-initials>.yaml
 ```
 **💡 Ask Bob:**
 ```
